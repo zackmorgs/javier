@@ -8,3 +8,14 @@
   font-size:18px;
   font-family: 'Besley', serif;
 }
+
+.btn {
+  display:block;
+  background:blue;
+  color:white;
+  padding:1rem;
+}
+
+#hero-homepage {
+  /* background:url('/svg/all-barber-tools.svg'); */
+}

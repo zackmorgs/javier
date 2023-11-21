@@ -76,7 +76,7 @@ export default function Header() {
                 </Link>
               </li> */}
             </ul>
-            <ul className="flex grow justify-end flex-wrap items-center">
+            {/* <ul className="flex grow justify-end flex-wrap items-center">
               <li>
                 <Link href="/contact" className="btn-sm text-gray-200 bg-gray-900 hover:bg-gray-800 ml-3">
                   <span>Contact</span>
@@ -85,7 +85,7 @@ export default function Header() {
                   </svg>
                 </Link>
               </li>
-            </ul>
+            </ul> */}
           </nav>
 
           <MobileMenu />
