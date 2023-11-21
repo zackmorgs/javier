@@ -7,11 +7,11 @@ export default function Page() {
             <Hero title="Contact">
                 <p>How to get in touch with me!</p>
             </Hero>
-            <div className="container">
+            <div className="max-w-6xl mx-auto px-4 sm:px-6">
                 <a className="btn btn-primary mt-3" href="tel:+15073192140">
-                    <FiPhone /> 
-                    Call Me
+                    <FiPhone className="inline-block" /> Call Me
                 </a>
+                
             </div>
         </>
 

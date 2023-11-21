@@ -3,7 +3,7 @@ import type { Metadata } from 'next'
 import './globals.css'
 
 import Header from '@/components/ui/header'
-
+import Footer from '@/components/ui/footer'
 
 export const metadata: Metadata = {
   title: "Javier's Barbershop",
@@ -24,8 +24,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={besley.className}>
-        <Header/>
-        {children}
+        <Header />
+        <main>
+          {children}
+        </main>
+        <Footer />
       </body>
     </html>
   )

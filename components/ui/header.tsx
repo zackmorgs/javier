@@ -44,23 +44,23 @@ export default function Header() {
             <ul className="flex grow justify-end flex-wrap items-center">
               {menuItems.map((item, index) => (
                 <li key={index}>
-                  <Link href={item.href} className="font-medium text-gray-600 hover:text-gray-900 px-5 py-3 flex items-center transition duration-150 ease-in-out">{item.name}</Link>
+                  <Link href={item.href} className="menu-item font-medium text-gray-600 hover:text-gray-900 px-2 py-3 mx-3 flex items-center transition duration-150 ease-in-out">{item.name}</Link>
                   {/* {typeof item.icon !== 'undefined' ? item.icon | ""} */}
                 </li>
               ))}
               <Dropdown title="Services">
                 {/* 2nd level: hover */}
                 <li>
-                  <Link href="/services/web-design" className="font-medium text-sm text-gray-600 hover:text-gray-900 flex py-2 px-5 leading-tight">Websites</Link>
+                  <Link href="/services/haircuts" className="font-medium text-sm text-gray-600 hover:text-gray-900 flex py-2 px-2 leading-tight">Websites</Link>
                 </li>
                 <li>
-                  <Link href="/services/ai" className="font-medium text-sm text-gray-600 hover:text-gray-900 flex py-2 px-5 leading-tight">AI</Link>
+                  <Link href="/services/shaving" className="font-medium text-sm text-gray-600 hover:text-gray-900 flex py-2 px-2 leading-tight">AI</Link>
                 </li>
                 <li>
-                  <Link href="/services/e-commerce" className="font-medium text-sm text-gray-600 hover:text-gray-900 flex py-2 px-5 leading-tight">E-Commerce</Link>
+                  <Link href="/services/" className="font-medium text-sm text-gray-600 hover:text-gray-900 flex py-2 px-2 leading-tight">E-Commerce</Link>
                 </li>
                 <li>
-                  <Link href="/services/branding" className="font-medium text-sm text-gray-600 hover:text-gray-900 flex py-2 px-5 leading-tight">Branding</Link>
+                  <Link href="/services/branding" className="font-medium text-sm text-gray-600 hover:text-gray-900 flex py-2 px-2 leading-tight">Branding</Link>
                 </li>
               </Dropdown>
 
