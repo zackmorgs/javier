@@ -14,7 +14,7 @@ export default function HeroHomepage() {
             <div id="hero-text" className="max-w-6xl mx-auto px-4 sm:px-6">
                 <div className="pt-32 pb-8 md:pt-40 md:pb-20">
                     <div className="text-center pb-12 md:pb-16">
-                        <h1 className="text-5xl md:text-6xl font-extrabold leading-tighter tracking-tighter mb-4" data-aos="zoom-y-out">Javier's Barbershop</h1>
+                        <h1 className="text-5xl md:text-6xl font-bold leading-tighter tracking-tighter mb-4" data-aos="zoom-y-out">Javier's Barbershop</h1>
                         <div className="max-w-xs mx-auto sm:max-w-none text-center" data-aos="zoom-y-out" data-aos-delay="300">
                             <p>A Barbershop located in Rochester, MN</p>
                             <div className="flex flex-col md:flex md:flex-row lg:flex-row justify-center mt-6">

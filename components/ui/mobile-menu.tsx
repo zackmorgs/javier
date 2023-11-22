@@ -15,7 +15,8 @@ export default function MobileMenu() {
     { name: 'Home', href: '/' },
     { name: 'About', href: '/about' },
     { name: 'Contact', href: '/contact' },
-    { name: 'Services', href: '/services' }
+    { name: 'Services', href: '/services' },
+    { name: 'Book an Appointment', href: 'book-appointment' }
   ];
 
   // close the mobile menu on click outside
