@@ -7,7 +7,7 @@ export default function Services() {
 
     return (
         <section id="services-homepage" className="pb-3">
-            <div className="max-w-6xl mx-auto px-5 sm:px-6 py-3">
+            <div className="mx-auto px-5 sm:px-6 py-3">
                 <h2 className="text-3xl text-center mt-2 mb-6 font-bold">Services</h2>
                 <ul className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-3">
                     {services.map((service) => {
