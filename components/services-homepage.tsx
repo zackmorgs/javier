@@ -5,18 +5,21 @@ import { services } from '@/data/services';
 export default function Services() {
 
     return (
-        <section id="services">
-            <div className="max-w-6xl mx-auto px-5 sm:px-6 py-3 mb-3">
+        <section id="services-homepage" className="pb-3">
+            <div className="max-w-6xl mx-auto px-5 sm:px-6 py-3 mb-4">
+                <h2 className="text-3xl text-center mt-2 mb-6">Services</h2>
                 <ul className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-3">
                     {services.map((service) => {
                         return (
                             <li>
-                                <Link href={service.link} className="flex flex-col justify-center text-center">
-                                    <Image src={service.picture} alt={service.name} width={375} height={375} />
-                                    <h4 className="text-xl">{service.name}</h4>
-                                    <Link href={service.link}>
-                                        Learn More
-                                    </Link>
+                                <Link href={service.link} className="service-homepage text-center bg-white block">
+                                    <Image src={service.picture} alt={service.name} width={375} height={375} className="mx-auto " />
+                                    <div className="py-3">
+                                        <h3 className="h3 mb-6 font-bold text-2xl">{service.name}</h3>
+                                        <Link href={service.link} className="btn">
+                                            Learn More
+                                        </Link>
+                                    </div>
                                 </Link>
                             </li>
                         )

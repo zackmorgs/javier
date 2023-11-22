@@ -8,21 +8,39 @@
   font-size: 18px;
   font-family: 'Besley', serif;
   --main-blue: #0707c1;
+  --main-black:black;
 }
 
 .btn {
   display: block;
-  background: var(--main-blue);
+  background: var(--main-black);
   color: white;
   padding: 1rem;
   text-align: center;
+  transition:background-color .3s ease, transform .3s ease;
 }
-
+.btn:hover {
+  background:#393939;
+}
+.btn-primary {
+  background: var(--main-blue);
+}
+.btn-primary:hover {
+  background:#0c0cf5;
+}
 #hero-homepage #hero-bg {
-  /* background:url('/svg/all-barber-tools.svg'); */
-  background: url('/img/hero-bg.jpg');
+  
+  /* background: url('/img/hero-bg.jpg'); */
 }
-
+#services-homepage {
+  /* background:url('/svg/all-barber-tools.svg'); */
+}
+/* .service-homepage {
+  transition:transform .3s ease;
+}
+.service-homepage:hover{
+  transform:scale(1.02);
+} */
 /* Always set the map height explicitly to define the size of the div
  * element that contains the map. */
 gmp-map {
@@ -30,9 +48,19 @@ gmp-map {
   width:100%;
 }
 
-@media (min-width: 640px) {}
+#services h2 {
+  /* color:white; */
+}
+
+@media (min-width: 640px) {
+
+}
 
 @media (min-width: 768px) {
+  .btn {
+    display:inline-block;
+    padding:1rem 1.5rem;
+  }
   .menu-item {
     transition: border .1s ease;
     display: inline-block;
