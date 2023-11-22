@@ -72,8 +72,8 @@ gmp-map {
 @media (min-width: 768px) {
   .btn {
     display:inline-block;
-    padding:1rem 1.5rem;
-    border-radius:0.5rem;
+    padding:0.75rem 1.5rem;
+    border-radius:0.25rem;
   }
   .menu-item {
     transition: border .1s ease;
