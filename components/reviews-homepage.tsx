@@ -3,6 +3,7 @@ import { useState } from 'react';
 
 import { reviews } from "@/data/reviews"
 import Stars from "./ui/stars"
+import { FiArrowRight, FiArrowLeft } from "react-icons/fi";
 
 export default function ReviewsHomepage() {
     // State to control the display of reviews
@@ -19,12 +20,19 @@ export default function ReviewsHomepage() {
     return (
         <section id="reviews-homepage">
             <div className="xl:max-w-7xl mx-auto px-5 sm:px-6 py-3 mb-4">
-                <h2 className="text-3xl text-center mt-2  font-bold">Reviews</h2>
-                <p className="text-center mb-6">Brought to you by Google</p>
-                <ul className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+
+                <div className="border-b border-gray-300 pb-2 mb-4">
+                    <h2 className="text-3xl text-center mt-2  font-bold">Reviews</h2>
+                    <small className="text-gray-600 text-center block mt-1">
+                        <i>
+                            Brought to you by Google
+                        </i>
+                    </small>
+                </div>
+                <ul className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 mb-4">
                     {displayedReviews.map((review, index) => {
                         return (
-                            <li key={index} className="review mb-4">
+                            <li key={index} className="review mb-1 py-2 px-2 border-b">
                                 <div className="flex flex-row justify-between mb-2">
                                     <b>{review.name}</b>
                                     <Stars stars={review.stars} />
@@ -35,9 +43,17 @@ export default function ReviewsHomepage() {
                     })}
                 </ul>
                 {reviews.length > 4 && (
-                    <div className="text-center mt-4">
-                        <a onClick={toggleReviewsDisplay} className="btn">
-                            {showAllReviews ? 'See Less Reviews' : 'See More Reviews'}
+                    <div className="text-center mt-2 md:mt-4">
+                        <a href="#reviews-homepage" onClick={toggleReviewsDisplay} className="btn">
+                            {showAllReviews ? (
+                                <span>
+                                    <FiArrowLeft className="icon inline-block" /> See Less Reviews
+                                </span>
+                            ) : (
+                                <span>
+                                    See More Reviews <FiArrowRight className="icon inline-block" />
+                                </span>
+                            )}
                         </a>
                     </div>
                 )}

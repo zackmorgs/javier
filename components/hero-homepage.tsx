@@ -1,12 +1,11 @@
 import React, { ReactNode } from 'react';
 import Link from "next/link";
-import { FiCalendar } from "react-icons/fi";
-import { FiPhone } from "react-icons/fi";
+import { FiCalendar, FiMapPin, FiPhone } from "react-icons/fi";
 
 export default function HeroHomepage() {
     return (
         <section id="hero-homepage" className="relative">
-            <div id="hero-bg" className="absolute left-1/2 transform -translate-x-1/2 bottom-0 pointer-events-none -z-1 w-full h-full"  aria-hidden="true">
+            <div id="hero-bg" className="absolute left-1/2 transform -translate-x-1/2 bottom-0 pointer-events-none -z-1 w-full h-full" aria-hidden="true">
                 {/* <video autoPlay muted loop className="w-full">
                     <source src="/video/video.mp4"/>
                 </video> */}
@@ -19,12 +18,16 @@ export default function HeroHomepage() {
                             <p>A Barbershop located in Rochester, MN</p>
                             <div className="flex flex-col md:flex md:flex-row lg:flex-row justify-center mt-6">
                                 <Link href="/book-appointment" className="btn btn-primary md:mr-4">
-                                    <FiCalendar className="icon inline-block"/> Book an Appointment
+                                    <FiCalendar className="icon inline-block" /> Book an Appointment
                                 </Link>
-                                <Link href="" className="btn btn-secondary mt-4 md:mt-0">
-                                    <FiPhone className="icon inline-block"/> Call
+                                <Link href="tel:+15073192140" className="btn btn-secondary mt-4 md:mt-0 md:mr-4">
+                                    <FiPhone className="icon inline-block" /> Call
+                                </Link>
+                                <Link href="https://maps.app.goo.gl/7NZjuGxVRSdjGkTq5" target="_blank" className="btn mt-4 md:mt-0">
+                                    <FiMapPin className="icon inline-block" /> Directions
                                 </Link>
                             </div>
+
                         </div>
                     </div>
                 </div>

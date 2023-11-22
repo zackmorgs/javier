@@ -13,6 +13,9 @@
 .-z-1 {
   z-index:-1;
 }
+.logo {
+  font-weight:500;
+}
 .btn {
   display: block;
   background: var(--main-black);
