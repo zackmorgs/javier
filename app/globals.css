@@ -61,9 +61,10 @@ gmp-map {
 #services h2 {
   /* color:white; */
 }
-/* .stars {
-  color:yellow;
-} */
+.stars {
+  color:black;
+
+}
 @media (min-width: 640px) {
 
 }
@@ -72,6 +73,7 @@ gmp-map {
   .btn {
     display:inline-block;
     padding:1rem 1.5rem;
+    border-radius:0.5rem;
   }
   .menu-item {
     transition: border .1s ease;
