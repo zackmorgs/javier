@@ -24,6 +24,10 @@
 .btn:hover {
   background:#393939;
 }
+.btn .icon {
+  position:relative;
+  top:-2px;
+}
 .btn-primary {
   background: var(--main-blue);
 }

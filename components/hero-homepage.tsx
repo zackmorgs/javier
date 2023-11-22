@@ -1,5 +1,7 @@
 import React, { ReactNode } from 'react';
 import Link from "next/link";
+import { FiCalendar } from "react-icons/fi";
+import { FiPhone } from "react-icons/fi";
 
 export default function HeroHomepage() {
     return (
@@ -17,10 +19,10 @@ export default function HeroHomepage() {
                             <p>A Barbershop located in Rochester, MN</p>
                             <div className="flex flex-col md:flex md:flex-row lg:flex-row justify-center mt-6">
                                 <Link href="/book-appointment" className="btn btn-primary md:mr-4">
-                                    Book an Appointment
+                                    <FiCalendar className="icon inline-block"/> Book an Appointment
                                 </Link>
                                 <Link href="" className="btn btn-secondary mt-4 md:mt-0">
-                                    Call
+                                    <FiPhone className="icon inline-block"/> Call
                                 </Link>
                             </div>
                         </div>

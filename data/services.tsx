@@ -11,7 +11,7 @@ export const services = [
     },
     {
         name: "Straight Razor",
-        picture: "/img/haircuts/men/3.jpg",
+        picture: "/img/services/straight-razor.jpg",
         link: "/services/straight-razor",
     },
     {
