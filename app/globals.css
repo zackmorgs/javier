@@ -28,6 +28,13 @@
 .btn-primary:hover {
   background:#0c0cf5;
 }
+.btn-secondary {
+  background: red;
+}
+.btn-secondary:hover {
+  background:hsl(0 100% 56% / 1);
+}
+
 #hero-homepage #hero-bg {
   
   /* background: url('/img/hero-bg.jpg'); */

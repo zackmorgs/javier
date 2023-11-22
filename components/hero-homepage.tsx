@@ -13,9 +13,12 @@ export default function HeroHomepage() {
                         <h1 className="text-5xl md:text-6xl font-extrabold leading-tighter tracking-tighter mb-4" data-aos="zoom-y-out">Javier's Barbershop</h1>
                         <div className="max-w-xs mx-auto sm:max-w-none text-center" data-aos="zoom-y-out" data-aos-delay="300">
                             <p>A Barbershop located in Rochester, MN</p>
-                            <div>
-                                <Link href="/book-appointment" className="btn btn-primary mt-5 mx:auto">
+                            <div className="flex flex-col md:flex md:flex-row lg:flex-row justify-center mt-6">
+                                <Link href="/book-appointment" className="btn btn-primary md:mr-4">
                                     Book an Appointment
+                                </Link>
+                                <Link href="" className="btn btn-secondary mt-4 md:mt-0">
+                                    Call
                                 </Link>
                             </div>
                         </div>
