@@ -80,7 +80,18 @@ export default function Footer() {
               ))}
             </ul>
           </div>
-
+          {/* <div className="footer-section sm:col-span-6 md:col-span-3 lg:col-span-2">
+            <h6 className="text-gray-800 font-medium mb-2">Company</h6>
+            <ul className="text-sm">
+              {companyLinks.map((link, index) => (
+                <li key={index} className="mb-2">
+                  <Link href={link.href}className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out">
+                      {link.name}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div> */}
           {/* 5th block */}
           <div className="footer-section sm:col-span-6 md:col-span-3 lg:col-span-3">
             <h6 className="text-gray-800 font-medium mb-2">Subscribe</h6>
