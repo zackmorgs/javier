@@ -1,3 +1,5 @@
+import Link from "next/link"
+
 export default function Hours() {
     const availability = [
         {
@@ -30,8 +32,8 @@ export default function Hours() {
         }
     ]
     return (
-        <section id="availability">
-            <div className="xl:max-w-7xl mx-auto px-5 sm:px-6 py-3">
+        <section id="availability" className="w-full md:max-w-sm">
+            <div className="mx-auto px-5 sm:px-6 py-3">
                 <div className="mb-4 border-b border-gray-300 pb-4">
                     <h2 className="text-2xl font-bold text-center">Availability</h2>
                     <small className="text-gray-600 mt-2 block">
@@ -50,6 +52,11 @@ export default function Hours() {
                         )
                     })}
                 </ul>
+                <div className="block md:flex justify-center mt-4">
+                    <Link href="/book-appointment" className="btn">
+                        Book an Appointment
+                    </Link>
+                </div>
             </div>
         </section>
     )
