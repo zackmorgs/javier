@@ -51,16 +51,16 @@ export default function Header() {
               <Dropdown title="Services">
                 {/* 2nd level: hover */}
                 <li>
-                  <Link href="/services/haircuts" className="font-medium text-sm text-gray-600 hover:text-gray-900 flex py-2 px-2 leading-tight">Websites</Link>
+                  <Link href="/services/haircuts" className="font-medium text-sm text-gray-600 hover:text-gray-900 flex py-2 px-2 leading-tight">Haircuts</Link>
                 </li>
                 <li>
-                  <Link href="/services/shaving" className="font-medium text-sm text-gray-600 hover:text-gray-900 flex py-2 px-2 leading-tight">AI</Link>
+                  <Link href="/services/shaving" className="font-medium text-sm text-gray-600 hover:text-gray-900 flex py-2 px-2 leading-tight">Shaving</Link>
                 </li>
                 <li>
-                  <Link href="/services/" className="font-medium text-sm text-gray-600 hover:text-gray-900 flex py-2 px-2 leading-tight">E-Commerce</Link>
+                  <Link href="/services/hot-towel" className="font-medium text-sm text-gray-600 hover:text-gray-900 flex py-2 px-2 leading-tight">Hot Towel</Link>
                 </li>
                 <li>
-                  <Link href="/services/branding" className="font-medium text-sm text-gray-600 hover:text-gray-900 flex py-2 px-2 leading-tight">Branding</Link>
+                  <Link href="/services/straight-razor" className="font-medium text-sm text-gray-600 hover:text-gray-900 flex py-2 px-2 leading-tight">Straight Razor</Link>
                 </li>
               </Dropdown>
 
