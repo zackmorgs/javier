@@ -1,16 +1,26 @@
+"use client"
+import { useState } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import { services } from '@/data/services';
 import { FiArrowRight } from "react-icons/fi";
 
 export default function Services() {
+    // State to control the display of services
+    const [showAll, setShowAll] = useState(false);
+
+    // Function to toggle the display
+    const toggleDisplay = () => {
+        setShowAll(!showAll);
+    };
+    const displayedServices = showAll ? services : services.slice(0, 4);
 
     return (
         <section id="services-homepage" className="pb-3">
-            <div className="mx-auto px-5 sm:px-6 py-3">
+            <div className="xl:max-w-7xl mx-auto px-5 sm:px-6 py-3">
                 <h2 className="text-3xl text-center mt-2 mb-6 font-bold">Services</h2>
                 <ul className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-3">
-                    {services.map((service) => {
+                    {displayedServices.map((service) => {
                         return (
                             <li>
                                 <Link href={service.link} className="service-homepage text-center bg-white block mb-3">
@@ -26,6 +36,13 @@ export default function Services() {
                         )
                     })}
                 </ul>
+                {services.length > 4 && (
+                    <div className="text-center mt-4">
+                        <button onClick={toggleDisplay} className="btn">
+                            {showAll ? 'See Less' : 'See More'}
+                        </button>
+                    </div>
+                )}
             </div>
         </section>
     )
