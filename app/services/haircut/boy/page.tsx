@@ -1,12 +1,11 @@
 import Hero from "@/components/ui/hero"
-import HaircutServices from "./haircut-services"
 
 export default function Page() {
     return (
         <>
-            <Hero title="Haircuts">
+            <Hero title="Boys Haircuts">
+                <p>A bit about my haircut service and what I have to offer with it.</p>
             </Hero>
-            <HaircutServices />
         </>
     )
 }
