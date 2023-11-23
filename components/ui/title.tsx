@@ -18,13 +18,13 @@ interface TitleProps {
 
 export function TitleXL({ children }: TitleProps) {
     return (
-        <h1 className={`${rye.className} uppercase text-4xl md:text-6xl font-bold leading-tighter tracking-tighter`}>{children}</h1>
+        <h1 className={`${rye.className} uppercase text-4xl md:text-6xl font-bold leading-tighter`}>{children}</h1>
     )
 }
 
 export function TitleLg({ children }: TitleProps) {
     return (
-        <h2 className={`uppercase text-3xl mt-2 font-bold`}>{children}</h2>
+        <h2 className={`uppercase text-3xl mt-2 font-bold leading-tighter `}>{children}</h2>
     )
 }
 
