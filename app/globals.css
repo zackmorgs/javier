@@ -126,7 +126,9 @@ p a:hover {
 }
 
 #hero-homepage #hero-bg {
-  background: url('/img/bike-bw-faded.jpg');
+  /* background: url('/img/bike-bw-faded.jpg');
+   */
+  background: url('/img/javier-faded-upscaled.jpg');
   background-size: cover;
   background-position: 50% 50%;
 }
