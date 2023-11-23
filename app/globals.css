@@ -57,14 +57,14 @@
 
 .btn-tertiary {
   background: white;
-  border: 1px solid black;
+  /* border: 1px solid black; */
   color: black;
   transition: border-color .3s ease, color .3s ease;
 }
 
 .btn-tertiary:hover {
   background-color: white;
-  border-color: #d3d3d3;
+  /* border-color: #d3d3d3; */
   color: #d3d3d3;
 }
 

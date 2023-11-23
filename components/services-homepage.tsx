@@ -20,9 +20,9 @@ export default function Services() {
             <div className="xl:max-w-7xl mx-auto px-5 sm:px-6 py-3">
                 <h2 className="text-3xl text-center mt-2 mb-6 font-bold border-b border-gray-300 pb-4">Services</h2>
                 <ul className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-3 md:px-4">
-                    {displayedServices.map((service) => {
+                    {displayedServices.map((service, index) => {
                         return (
-                            <li>
+                            <li key={index}>
                                 <Link href={service.link} className="service-homepage text-center bg-white block mb-3">
                                     <Image src={service.picture} alt={service.name} width={375} height={375} className="mx-auto w-full" />
                                     <div className="py-3">

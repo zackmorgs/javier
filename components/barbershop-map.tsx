@@ -1,5 +1,9 @@
+"use client";
+
 import React, { ReactNode, useEffect, useRef, useMemo } from "react";
 import { FiMapPin } from "react-icons/fi";
+
+
 const api_key = "AIzaSyB4TUm1764C7Dr6jSAKFMVbJfo0x7YXVq4";
 
 const MapComponent = () => {
