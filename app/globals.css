@@ -9,68 +9,76 @@
   font-family: 'Besley', serif;
   --main-blue: #0707c1;
   /* --main-black:#393737; */
-  --main-black:black; 
+  --main-black: black;
   /* color:var(--main-black); */
 }
+
 .-z-1 {
-  z-index:-1;
+  z-index: -1;
 }
+
 .logo {
-  font-weight:500;
+  font-weight: 500;
 }
+
 .btn {
   display: block;
   background: var(--main-black);
   color: white;
   padding: 1rem;
   text-align: center;
-  transition:background-color .3s ease, transform .3s ease;
+  transition: background-color .3s ease, transform .3s ease;
 }
+
 .btn:hover {
-  background:#393939;
+  background: #393939;
 }
+
 .btn .icon {
-  position:relative;
-  top:-2px;
+  position: relative;
+  top: -2px;
 }
+
 .btn-primary {
   background: var(--main-blue);
 }
+
 .btn-primary:hover {
-  background:#0c0cf5;
+  background: #0c0cf5;
 }
+
 .btn-secondary {
   background: red;
 }
+
 .btn-secondary:hover {
-  background:hsl(0 100% 45% / 1);
+  background: hsl(0 100% 45% / 1);
 }
+
 .btn-tertiary {
-  background:white;
-  border:1px solid black;
-  color:black;
-  transition:border-color .3s ease, color .3s ease;
+  background: white;
+  border: 1px solid black;
+  color: black;
+  transition: border-color .3s ease, color .3s ease;
 }
+
 .btn-tertiary:hover {
-  background-color:white;
-  border-color:#d3d3d3;
-  color:#d3d3d3;
+  background-color: white;
+  border-color: #d3d3d3;
+  color: #d3d3d3;
 }
+
 #availability .icon {
   position: relative;
   top: -3px;
 }
- 
+
 #hero-homepage #hero-bg {
-  
-  background:url('/img/bike-bw-faded.jpg');
+  background: url('/img/bike-bw-faded.jpg');
   background-size: cover;
-  background-position:50% 50%;
-} 
-
-#services-homepage {
-
+  background-position: 50% 50%;
 }
+
 /* .service-homepage {
   transition:transform .3s ease;
 }
@@ -81,25 +89,26 @@
  * element that contains the map. */
 gmp-map {
   height: 100%;
-  width:100%;
+  width: 100%;
 }
 
 #services h2 {
   /* color:white; */
 }
-.stars {
-  color:black;
-}
-@media (min-width: 640px) {
 
+.stars {
+  color: black;
 }
+
+@media (min-width: 640px) {}
 
 @media (min-width: 768px) {
   .btn {
-    display:inline-block;
-    padding:0.75rem 1.5rem;
-    border-radius:0.25rem;
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.25rem;
   }
+
   .menu-item {
     transition: border .1s ease;
     display: inline-block;
