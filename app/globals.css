@@ -154,7 +154,7 @@ gmp-map {
 .service-picture {
   transition:transform .3s ease;
 }
-.service-picture:hover {
+.service-homepage:hover .service-picture {
   transform:scale(1.1);
 }
 .stars {
