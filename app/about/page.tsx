@@ -10,8 +10,8 @@ export default function Page() {
             <Hero title="About">
                 <p>A bit about me and my barbershop.</p>
             </Hero>
-            <AboutBarbershop/>
             <AboutJavier/>
+            <AboutBarbershop/>
         </>
     )
 }
