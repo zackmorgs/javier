@@ -2,7 +2,10 @@
 import { useState } from 'react';
 
 import { reviews } from "@/data/reviews"
+
+import { TitleLg}  from '@/components/ui/title'
 import Stars from "./ui/stars"
+
 import { FiArrowRight, FiArrowLeft } from "react-icons/fi";
 
 export default function ReviewsHomepage() {
@@ -22,7 +25,9 @@ export default function ReviewsHomepage() {
             <div className="xl:max-w-7xl mx-auto px-5 sm:px-6 py-3 mb-4">
 
                 <div className="border-b border-gray-300 pb-2 mb-4">
-                    <h2 className="text-3xl text-center mt-2  font-bold">Reviews</h2>
+                    <div className="text-center mt-2">
+                        <TitleLg>Reviews</TitleLg>
+                    </div>
                     <small className="text-gray-600 text-center block mt-1">
                         <i>
                             Brought to you by Google

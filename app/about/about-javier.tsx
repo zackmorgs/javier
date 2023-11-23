@@ -1,6 +1,6 @@
 import Image from "next/image"
 import Link from "next/link"
-
+import { TitleMd } from "@/components/ui/title"
 import Cta from "@/components/cta"
 
 export default function AboutJavier() {
@@ -14,7 +14,7 @@ export default function AboutJavier() {
                         </div>
                         <div className="basis-3/4 px-5 sm:px-6">
                             <div className="mb-4 border-b border-gray-300 pb-4">
-                                <h2 className="text-2xl font-bold">Who I Am</h2>
+                                <TitleMd>Who I Am</TitleMd>
                             </div>
                             <p className="text-xl mb-2">My name is Javier. </p>
                             <p className="mb-2">I am from <Link href="https://www.google.com/maps/place/Ponce,+Puerto+Rico/@17.2532577,-63.001475,7z/data=!4m6!3m5!1s0x8c1cd5813b1ddf7f:0x274b92c47106eee2!8m2!3d18.0110768!4d-66.6140616!16zL20vMGxnMHI" target="_blank">Ponce, Puerto Rico</Link> and I live and work in Rochester, MN in the United States.</p>
@@ -41,7 +41,7 @@ export default function AboutJavier() {
                 </div>
 
             </section>
-            <Cta/>
+            <Cta />
         </>
     )
 }

@@ -1,6 +1,7 @@
 "use client";
 
 import React, { ReactNode, useEffect, useRef, useMemo } from "react";
+import { TitleLg }  from '@/components/ui/title'
 import { FiMapPin } from "react-icons/fi";
 
 
@@ -10,7 +11,9 @@ const MapComponent = () => {
   return (
     <section id="location" className="w-full">
       <div className="px-4 sm:px-6 mt-4 mb-4">
-        <h3 className="text-3xl font-bold text-center mt-2 mb-6 border-b border-gray-300 pb-2">Location</h3>
+        <div className="text-center mt-2 mb-6 border-b border-gray-300 pb-2">
+          <TitleLg>Location</TitleLg>
+        </div>
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11473.880610887032!2d-92.4483204!3d44.0323426!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87f9e1e9dc992633%3A0x6883b1d09c36820b!2sJaviers%20Barbershop!5e0!3m2!1sen!2sus!4v1700674374772!5m2!1sen!2sus"
           width="100%"

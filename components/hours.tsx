@@ -1,4 +1,5 @@
 import Link from "next/link"
+import { TitleLg }  from '@/components/ui/title'
 import { FiClock, FiCalendar } from "react-icons/fi";
 
 export default function Hours() {
@@ -36,7 +37,9 @@ export default function Hours() {
         <section id="availability" className="w-full md:max-w-sm">
             <div className="mx-auto px-5 sm:px-6 py-3">
                 <div className="mb-4 border-b border-gray-300 pb-4">
-                    <h2 className="text-2xl font-bold text-center">Availability</h2>
+                    <div className="text-center">
+                        <TitleLg>Availability</TitleLg>
+                    </div>
                     <small className="text-gray-600 mt-2 block">
                         <i className="text-center mx:auto block">Hours may vary depending on Holidays, vacations, time-off etc.</i>
                     </small>

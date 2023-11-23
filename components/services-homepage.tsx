@@ -3,6 +3,7 @@ import { useState } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import { services } from '@/data/services';
+import { TitleLg, TitleMd }  from '@/components/ui/title'
 import { FiArrowRight } from "react-icons/fi";
 
 export default function Services() {
@@ -18,7 +19,9 @@ export default function Services() {
     return (
         <section id="services-homepage" className="pb-3">
             <div className="xl:max-w-7xl mx-auto px-5 sm:px-6 py-3">
-                <h2 className="text-3xl text-center mt-2 mb-6 font-bold border-b border-gray-300 pb-4">Services</h2>
+                <div className="border-b border-gray-300 text-center mb-4 pb-3">
+                    <TitleLg>Services</TitleLg>
+                </div>
                 <ul className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-3 md:px-4">
                     {displayedServices.map((service, index) => {
                         return (
@@ -26,7 +29,9 @@ export default function Services() {
                                 <Link href={service.link} className="service-homepage text-center bg-white block mb-3">
                                     <Image src={service.picture} alt={service.name} width={375} height={375} className="mx-auto w-full" />
                                     <div className="py-3">
-                                        <h3 className="h3 mt-3 mb-4 font-bold text-2xl">{service.name}</h3>
+                                        <div className="mt-3 mb-4">
+                                            <TitleMd>{service.name}</TitleMd>
+                                        </div>
                                         <Link href={service.link} className="btn">
                                             Learn More <FiArrowRight className="icon inline-block" />
                                         </Link>
