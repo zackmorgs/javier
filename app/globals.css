@@ -8,7 +8,9 @@
   font-size: 18px;
   font-family: 'Besley', serif;
   --main-blue: #0707c1;
-  --main-black:black;
+  /* --main-black:#393737; */
+  --main-black:black; 
+  /* color:var(--main-black); */
 }
 .-z-1 {
   z-index:-1;
@@ -41,7 +43,22 @@
   background: red;
 }
 .btn-secondary:hover {
-  background:hsl(0 100% 56% / 1);
+  background:hsl(0 100% 45% / 1);
+}
+.btn-tertiary {
+  background:white;
+  border:1px solid black;
+  color:black;
+  transition:border-color .3s ease, color .3s ease;
+}
+.btn-tertiary:hover {
+  background-color:white;
+  border-color:#d3d3d3;
+  color:#d3d3d3;
+}
+#availability .icon {
+  position: relative;
+  top: -3px;
 }
 /* 
 #hero-homepage #hero-bg {
@@ -70,7 +87,6 @@ gmp-map {
 }
 .stars {
   color:black;
-
 }
 @media (min-width: 640px) {
 

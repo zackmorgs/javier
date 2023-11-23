@@ -1,10 +1,11 @@
 import Link from "next/link"
+import { FiClock, FiCalendar } from "react-icons/fi";
 
 export default function Hours() {
     const availability = [
         {
             dow: "Sunday",
-            hours: <span className="text-red-500">Closed</span>
+            hours: <span className="text-red-500"><FiClock className="inline-block icon" /> Closed</span>
         },
         {
             dow: "Monday",
@@ -54,7 +55,7 @@ export default function Hours() {
                 </ul>
                 <div className="block md:flex justify-center mt-4">
                     <Link href="/book-appointment" className="btn">
-                        Book an Appointment
+                        <FiCalendar className="inline-block icon" /> Book an Appointment
                     </Link>
                 </div>
             </div>

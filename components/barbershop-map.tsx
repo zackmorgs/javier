@@ -1,5 +1,5 @@
 import React, { ReactNode, useEffect, useRef, useMemo } from "react";
-
+import { FiMapPin } from "react-icons/fi";
 const api_key = "AIzaSyB4TUm1764C7Dr6jSAKFMVbJfo0x7YXVq4";
 
 const MapComponent = () => {
@@ -20,7 +20,7 @@ const MapComponent = () => {
           1112 9th St. NE, Rochester, MN, United States
         </address> */}
         <div className="md:flex flex-row justify-center">
-          <a href="https://maps.app.goo.gl/7NZjuGxVRSdjGkTq5" target="_blank" className="btn mt-3">Directions</a>
+           <a href="https://maps.app.goo.gl/7NZjuGxVRSdjGkTq5" target="_blank" className="btn mt-3"><FiMapPin className="inline-block icon"/> Directions</a>
         </div>
       </div>
     </section>

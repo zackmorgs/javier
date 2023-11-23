@@ -15,8 +15,7 @@ export default function MobileMenu() {
     { name: 'Home', href: '/' },
     { name: 'About', href: '/about' },
     { name: 'Contact', href: '/contact' },
-    { name: 'Services', href: '/services' },
-    { name: 'Book an Appointment', href: 'book-appointment' }
+    { name: 'Services', href: '/services' }
   ];
 
   // close the mobile menu on click outside
@@ -73,13 +72,20 @@ export default function MobileMenu() {
           leaveTo="opacity-0"
         >
           <ul className="px-5 py-2">
-            {menuItems.map((item, index) => (
-              <li key={index}>
-                <Link href={item.href} className="flex font-medium w-full text-gray-600 hover:text-gray-900 py-2 justify-center" onClick={() => setMobileNavOpen(false)}>
+            {menuItems.map((item, index) => {
+              return (
+                <li key={index}>
+                  <Link href={item.href} className="flex w-full text-gray-600 hover:text-gray-900 py-2 justify-center" onClick={() => setMobileNavOpen(false)}>
                     {item.name}
-                </Link>
-              </li>
-            ))}
+                  </Link>
+                </li>
+              )
+            })}
+            <li className="border-t pt-3">
+              <Link href="/book-appointment" className="flex w-full py-2 justify-center bg-black text-gray-50 hover:bg-black-900 rounded-md" onClick={() => setMobileNavOpen(false)}>
+                Book an Appointment
+              </Link>
+            </li>
           </ul>
         </Transition>
       </div>

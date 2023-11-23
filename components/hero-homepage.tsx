@@ -23,7 +23,7 @@ export default function HeroHomepage() {
                                 <Link href="tel:+15073192140" className="btn btn-secondary mt-4 md:mt-0 md:mr-4">
                                     <FiPhone className="icon inline-block" /> Call
                                 </Link>
-                                <Link href="https://maps.app.goo.gl/7NZjuGxVRSdjGkTq5" target="_blank" className="btn mt-4 md:mt-0">
+                                <Link href="https://maps.app.goo.gl/7NZjuGxVRSdjGkTq5" target="_blank" className="btn btn-tertiary mt-4 md:mt-0">
                                     <FiMapPin className="icon inline-block" /> Directions
                                 </Link>
                             </div>

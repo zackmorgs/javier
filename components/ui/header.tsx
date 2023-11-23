@@ -52,7 +52,7 @@ export default function Header() {
               <Dropdown title="Services">
                 {/* 2nd level: hover */}
                 <li>
-                  <Link href="/services/haircuts" className="font-medium text-sm text-gray-600 hover:text-gray-900 flex py-2 px-2 leading-tight">Haircuts</Link>
+                  <Link href="/services/haircut" className="font-medium text-sm text-gray-600 hover:text-gray-900 flex py-2 px-2 leading-tight">Haircuts</Link>
                 </li>
                 <li>
                   <Link href="/services/shaving" className="font-medium text-sm text-gray-600 hover:text-gray-900 flex py-2 px-2 leading-tight">Shaving</Link>
