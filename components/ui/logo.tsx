@@ -12,7 +12,7 @@ export default function Logo() {
     <Link href="/" aria-label="Cruip" className={`${rye.className} logo block`}>
       <div className="flex flex-row">
         {/* */}
-        <Image src="/svg/barbershop-thing-colored.svg" width={18} height={18} alt="Javier's Barbershop Logo Element" className="mr-3" /> 
+        <Image id="logo-img" src="/svg/barbershop-thing-colored.svg" width={18} height={18} alt="Javier's Barbershop Logo Element" className="mr-3" /> 
         <h3 id="logo-text" className="flex flex-col">  
           <span>Javier's </span>
           <span>Barbershop</span>

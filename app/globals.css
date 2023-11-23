@@ -5,13 +5,22 @@
 :root {
   font-size: 18px;
   font-family: 'Besley', serif;
-  --main-blue: #0707c1;
+  --main-blue: #0887dd;
+  --main-red:#e9351f;
   /* --main-black:#393737; */
   --main-black: black;
+  --main-white:#fbf3ef;
   /* color:var(--main-black); */
 }
 body {
-  background-color: #f1f1f1;
+  background-color: var(--main-white);
+}
+#header {
+  /* background-color:#979ca1; */
+  box-shadow: 0rem -0.333rem 2rem #414040;
+}
+#logo-img {
+  text-shadow:0px 0px 0px #979ca1;
 }
 #logo-text span {
   line-height: 1.125rem;
@@ -76,6 +85,8 @@ body {
   padding: 1rem;
   text-align: center;
   transition: background-color .3s ease, transform .3s ease;
+  /* border-radius:0.25rem; */
+
 }
 
 .btn:hover {
@@ -96,7 +107,7 @@ body {
 }
 
 .btn-secondary {
-  background: red;
+  background: var(--main-red);
 }
 
 .btn-secondary:hover {
@@ -141,12 +152,6 @@ p a:hover {
 .service-homepage:hover{
   transform:scale(1.02);
 } */
-/* Always set the map height explicitly to define the size of the div
- * element that contains the map. */
-gmp-map {
-  height: 100%;
-  width: 100%;
-}
 
 #services h2 {
   /* color:white; */
@@ -172,9 +177,22 @@ gmp-map {
 .service-text:nth-child(4) {
   background:white;
 } */
+#hero-homepage .btn {
+  /* margin-right:-1rem;
+  margin-left:-1rem; */
+  /* transform:rotate(-45deg); */
+}
+#hero-text p .icon {
+  position: relative !important;
+  top: -2px;
+}
 @media (min-width: 640px) {}
 
 @media (min-width: 768px) {
+  #header {
+    /* background-color:#979ca1; */
+    box-shadow: none;
+  }
   .btn {
     display: inline-block;
     padding: 0.75rem 1.5rem;

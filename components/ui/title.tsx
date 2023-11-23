@@ -19,7 +19,7 @@ export function TitleXL({ children }: TitleProps) {
 
 export function TitleLg({ children }: TitleProps) {
     return (
-        <h2 className={`uppercase text-3xl mt-2 font-bold leading-tighter `}>{children}</h2>
+        <h2 className={`uppercase text-3xl mt-2 font-bold leading-tighter`}>{children}</h2>
     )
 }
 

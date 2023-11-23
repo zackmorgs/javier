@@ -18,12 +18,12 @@ export default function HeroHomepage() {
                             <TitleXL>Javier's Barbershop</TitleXL>
                         </div>
                         <div className="max-w-xs mx-auto sm:max-w-none text-center" data-aos="zoom-y-out" data-aos-delay="300">
-                            <p>A barbershop located in Rochester, MN</p>
-                            <div className="flex flex-col md:flex md:flex-row lg:flex-row justify-center mt-6">
-                                <Link href="/book-appointment" className="btn btn-primary md:mr-4">
+                            <p className="font-bold	text-lg uppercase"><FiMapPin className="icon inline-block" /> Rochester, MN</p>
+                            <div className="flex flex-col md:flex md:flex-row lg:flex-row justify-center mt-8">
+                                <Link href="/book-appointment" className="btn btn-primary">
                                     <FiCalendar className="icon inline-block" /> Book an Appointment
                                 </Link>
-                                <Link href="https://maps.app.goo.gl/7NZjuGxVRSdjGkTq5" target="_blank" className="btn btn-tertiary mt-4 md:mt-0 md:mr-4 ">
+                                <Link href="https://maps.app.goo.gl/7NZjuGxVRSdjGkTq5" target="_blank" className="btn btn-tertiary mt-3 md:mt-0 md:mx-4 ">
                                     <FiMapPin className="icon inline-block" /> Directions
                                 </Link>
                                 <Link href="tel:+15073192140" className="btn btn-secondary mt-4 md:mt-0">
