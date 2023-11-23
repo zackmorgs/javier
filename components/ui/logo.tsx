@@ -1,12 +1,22 @@
 import Link from 'next/link'
 import Image from 'next/image'
+import { Rye } from 'next/font/google';
+
+const rye = Rye({
+    subsets: ['latin'],
+    weight: ['400']
+});
 
 export default function Logo() {
   return (
-    <Link href="/" aria-label="Cruip" className="logo block">
+    <Link href="/" aria-label="Cruip" className={`${rye.className} logo block`}>
       <div className="flex flex-row">
         {/* */}
-        <Image src="/svg/barbershop-thing-colored.svg" width={18} height={18} alt="Javier's Barbershop Logo Element" className="mr-3" /> <h3 className="flex flex-col">  <span>Javier's </span><span>Barbershop</span></h3>
+        <Image src="/svg/barbershop-thing-colored.svg" width={18} height={18} alt="Javier's Barbershop Logo Element" className="mr-3" /> 
+        <h3 id="logo-text" className="flex flex-col">  
+          <span>Javier's </span>
+          <span>Barbershop</span>
+        </h3>
         {/* <Image src="/images/svg/logo.svg" width={32} height={32} alt="App Portal Logo" /> */}
         {/* <svg className="w-8 h-8" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
         <defs>

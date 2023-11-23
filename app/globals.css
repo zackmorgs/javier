@@ -11,6 +11,13 @@
   /* color:var(--main-black); */
 }
 
+#logo-text span {
+  line-height: 1.125rem;
+}
+#logo-text span:first-child {
+  margin-top:0.25rem;
+}
+
 #hamburger {
   position: relative;
 }

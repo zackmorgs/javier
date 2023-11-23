@@ -1,15 +1,10 @@
 import React, { ReactNode } from 'react';
-import { Rye, Lora } from 'next/font/google';
+import { Rye } from 'next/font/google';
 
 const rye = Rye({
     subsets: ['latin'],
     weight: ['400']
 });
-
-const lora = Lora({
-    subsets: ['latin'],
-    weight: ['400','500','600', '700']
-})
 
 
 interface TitleProps {
