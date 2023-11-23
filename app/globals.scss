@@ -77,17 +77,17 @@ body {
 
 .btn {
   display: block;
-  background: var(--main-black);
+  background:linear-gradient(90deg, black, lighten(black, 10%));
   color: white;
   padding: 1rem;
   text-align: center;
   transition: background-color .3s ease, transform .3s ease;
-  /* border-radius:0.25rem; */
-
+  border-radius:0.25rem; 
 }
 
 .btn:hover {
-  background: #393939;
+  // background: #393939;
+  background:linear-gradient(90deg, lighten(black,10%), lighten(black, 20%));
 }
 
 .btn .icon {
@@ -96,30 +96,37 @@ body {
 }
 
 .btn-primary {
-  background: var(--main-blue);
+  background:linear-gradient(180deg, #0887dd, saturate(lighten(#0887dd, 5%), 10%));
 }
-
 .btn-primary:hover {
-  background: #0c0cf5;
+  background:linear-gradient(180deg, lighten(#0887dd, 10%), saturate(lighten(#0887dd, 10%), 15%));
 }
-
+.btn-primary:active {
+  background:linear-gradient(180deg, darken(#0887dd, 5%), saturate(darken(#0887dd, 10%), 10%));
+}
 .btn-secondary {
-  background: var(--main-red);
+  background:linear-gradient(180deg, #e9351f, lighten(#e9351f, 5%));
+
 }
 
 .btn-secondary:hover {
-  background: hsl(0 100% 45% / 1);
+  // background: hsl(0 100% 45% / 1);
+  background:linear-gradient(180deg, saturate(lighten(#e9351f, 2.5%),5%), saturate(lighten(#e9351f, 8%),5%));
 }
 
 .btn-tertiary {
-  background: white;
+  // background: white;
+  background:linear-gradient(180deg, #fbf3ef, lighten(#fbf3ef, 5%));
+
   /* border: 1px solid black; */
   color: black;
   transition: border-color .3s ease, background-color .3s ease;
 }
 
 .btn-tertiary:hover {
-  background-color: #d3d3d3;
+  // background-color: #d3d3d3;
+  background:linear-gradient(180deg, lighten(#fbf3ef,5%), lighten(#fbf3ef,10%));
+
   /* border-color: #d3d3d3; */
   /* color: #d3d3d3; */
 }

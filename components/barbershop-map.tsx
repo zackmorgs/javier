@@ -18,10 +18,10 @@ const MapComponent = () => {
           src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11473.880610887032!2d-92.4483204!3d44.0323426!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87f9e1e9dc992633%3A0x6883b1d09c36820b!2sJaviers%20Barbershop!5e0!3m2!1sen!2sus!4v1700674374772!5m2!1sen!2sus"
           width="100%"
           height="375"
-          style={{ border: 0 }}
           allowFullScreen={false}
           loading="lazy"
-          referrerPolicy="no-referrer-when-downgrade">
+          referrerPolicy="no-referrer-when-downgrade"
+          className="p-2 border bg-white">
         </iframe>
         {/* <address className="text-center mt-4">
           1112 9th St. NE, Rochester, MN, United States
