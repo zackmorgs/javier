@@ -45,15 +45,26 @@ export default function Hours() {
                     </small>
                 </div>
                 <ul className="px-2">
-                    {availability.map((day, index) => {
-                        return (
-                            <li key={index}>
-                                <span className="flex flex-row justify-between border-b border-gray-200 pb-2 pt-2">
-                                    <h4>{day.dow}</h4>
-                                    {day.hours}
-                                </span>
-                            </li>
-                        )
+                    {availability.map((day, index, array) => {
+                        if ((array.length - 1) !== index) {
+                            return (
+                                <li key={index}>
+                                    <span className="flex flex-row justify-between border-b border-gray-200 pb-2 pt-2">
+                                        <h4>{day.dow}</h4>
+                                        {day.hours}
+                                    </span>
+                                </li>
+                            )
+                        } else {
+                            return (
+                                <li key={index}>
+                                    <span className="flex flex-row justify-between pb-2 pt-2">
+                                        <h4>{day.dow}</h4>
+                                        {day.hours}
+                                    </span>
+                                </li>
+                            )
+                        }
                     })}
                 </ul>
                 <div className="block md:flex justify-center mt-4">
