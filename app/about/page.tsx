@@ -1,8 +1,8 @@
 import Hero from "@/components/ui/hero"
 import Image from "next/image"
 
-import AboutBarbershop from "./about-barbershop"
 import AboutJavier from "./about-javier"
+import AboutBarbershop from "./about-barbershop"
 
 export default function Page() {
     return (

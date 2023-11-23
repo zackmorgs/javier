@@ -28,9 +28,9 @@ export default function HaircutServices() {
         <>
             <section className="max-w-6xl mx-auto px-5 sm:px-6 py-3 mb-4">
                 <ul className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-3">
-                    {haircutServices.map((service) => {
+                    {haircutServices.map((service, index) => {
                         return (
-                            <li>
+                            <li key={index}>
                                 <Link href={service.link} className="block text-center">
                                     <Image 
                                         src={service.image} 

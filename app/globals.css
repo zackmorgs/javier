@@ -109,6 +109,12 @@
   /* color: #d3d3d3; */
 }
 
+p a {
+  border-bottom:2px solid var(--main-blue);
+}
+p a:hover {
+  border-color:#0c0cf5;
+}
 #availability .icon {
   position: relative;
   top: -3px;

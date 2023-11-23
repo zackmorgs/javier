@@ -1,4 +1,4 @@
-export default const social_links = [
+const social_links = [
     {
         name:"Facebook",
         url:""
@@ -7,4 +7,6 @@ export default const social_links = [
         name: "Yelp",
         url:"https://www.yelp.com/biz/javiers-barbershop-rochester"
     }
-]
+];
+
+export default social_links;

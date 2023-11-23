@@ -5,6 +5,7 @@ export default function Page() {
     return (
         <>
             <Hero title="Haircuts">
+                <p>A bit about my haircuts service.</p>
             </Hero>
             <HaircutServices />
         </>

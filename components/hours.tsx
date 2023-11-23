@@ -44,7 +44,7 @@ export default function Hours() {
                 <ul className="px-2">
                     {availability.map((day, index) => {
                         return (
-                            <li>
+                            <li key={index}>
                                 <span className="flex flex-row justify-between border-b border-gray-200 pb-2 pt-2">
                                     <h4>{day.dow}</h4>
                                     {day.hours}
