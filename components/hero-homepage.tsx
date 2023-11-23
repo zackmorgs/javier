@@ -12,7 +12,7 @@ export default function HeroHomepage() {
                 </video> */}
             </div>
             <div id="hero-text" className="max-w-6xl mx-auto px-4 sm:px-6">
-                <div className=" pt-32 pb-8 md:pt-40 md:pb-20">
+                <div className="pt-32 pb-8">
                     <div className="text-center pb-12 md:pb-16">
                         <div className="mb-2">
                             <TitleXL>Javier's Barbershop</TitleXL>
