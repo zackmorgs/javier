@@ -151,11 +151,27 @@ gmp-map {
 #services h2 {
   /* color:white; */
 }
-
+.service-picture {
+  transition:transform .3s ease;
+}
+.service-picture:hover {
+  transform:scale(1.1);
+}
 .stars {
   color: black;
 }
-
+/* .service-text:nth-child(1) {
+  background: #0000006b;
+}
+.service-text:nth-child(3) {
+  background: hsl(0deg 100% 45% / 38%);
+}
+.service-text:nth-child(3) {
+  background: #0707c173;
+}
+.service-text:nth-child(4) {
+  background:white;
+} */
 @media (min-width: 640px) {}
 
 @media (min-width: 768px) {

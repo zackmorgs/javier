@@ -26,10 +26,10 @@ export default function Services() {
                     {displayedServices.map((service, index) => {
                         return (
                             <li key={index}>
-                                <Link href={service.link} className="service-homepage text-center block mb-3">
-                                    <Image src={service.picture} alt={service.name} width={375} height={375} className="mx-auto w-full" />
-                                    <div className="py-3">
-                                        <div className="mt-3 mb-4">
+                                <Link href={service.link} className="service-homepage text-center block mb-3 relative overflow-hidden" >
+                                    <Image src={service.picture} alt={service.name} width={375} height={375} className="service-picture mx-auto w-full" />
+                                    <div className="service-text pt-3 pb-4 px-4 text-white absolute bottom-0 right-0 left-0">
+                                        <div className="mb-4">
                                             <TitleMd>{service.name}</TitleMd>
                                         </div>
                                         <Link href={service.link} className="btn">
