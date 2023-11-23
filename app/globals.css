@@ -60,14 +60,16 @@
   position: relative;
   top: -3px;
 }
-/* 
+ 
 #hero-homepage #hero-bg {
   
-  background: url('/img/bg.jpg');
+  background:url('/img/bike-bw-faded.jpg');
   background-size: cover;
-} */
+  background-position:50% 50%;
+} 
+
 #services-homepage {
-  /* background:url('/svg/all-barber-tools.svg'); */
+
 }
 /* .service-homepage {
   transition:transform .3s ease;
