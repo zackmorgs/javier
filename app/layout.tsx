@@ -1,6 +1,6 @@
 import { Besley } from 'next/font/google'
 import type { Metadata } from 'next'
-import './globals.css'
+import './globals.scss'
 
 import Header from '@/components/ui/header'
 import Footer from '@/components/ui/footer'
