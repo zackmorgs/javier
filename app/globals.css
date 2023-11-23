@@ -10,7 +10,9 @@
   --main-black: black;
   /* color:var(--main-black); */
 }
-
+body {
+  background-color: #f1f1f1;
+}
 #logo-text span {
   line-height: 1.125rem;
 }
