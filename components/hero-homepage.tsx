@@ -5,7 +5,7 @@ import { FiCalendar, FiMapPin, FiPhone } from "react-icons/fi";
 
 export default function HeroHomepage() {
     return (
-        <section id="hero-homepage" className="relative">
+        <section id="hero-homepage" className="relative h-screen md:h-auto">
             <div id="hero-bg" className="absolute left-1/2 transform -translate-x-1/2 bottom-0 pointer-events-none -z-1 w-full h-full" aria-hidden="true">
                 {/* <video autoPlay muted loop className="w-full">
                     <source src="/video/video.mp4"/>
@@ -14,7 +14,7 @@ export default function HeroHomepage() {
             <div id="hero-text" className="max-w-6xl mx-auto px-4 sm:px-6">
                 <div className=" pt-32 pb-8 md:pt-40 md:pb-20">
                     <div className="text-center pb-12 md:pb-16">
-                        <div className="mb-3">
+                        <div className="mb-2">
                             <TitleXL>Javier's Barbershop</TitleXL>
                         </div>
                         <div className="max-w-xs mx-auto sm:max-w-none text-center" data-aos="zoom-y-out" data-aos-delay="300">
