@@ -1,12 +1,12 @@
 export const services = [
     {
         name: "Haircut",
-        picture: "/img/haircuts/men/1.jpg",
+        picture: "/img/haircuts/men/2.jpg",
         link: "/services/haircut",
     },
     {
         name: "Shaving",
-        picture: "/img/haircuts/men/2.jpg",
+        picture: "/img/haircuts/men/5.jpg",
         link: "/services/shaving",
     },
     {
