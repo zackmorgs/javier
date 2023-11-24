@@ -2,12 +2,20 @@ import { TitleMd } from "./ui/title"
 export default function Pricing() {
     const services = [
         {
-            name: "Adult Haircut",
-            price: "$40"
+            name: "Eyebrows Trimming",
+            price: "$10"
         },
         {
             name: "Kids Haircut",
             price: "$35"
+        },
+        {
+            name: "Undercut",
+            price: "$35"
+        },
+        {
+            name: "Adult Haircut",
+            price: "$40"
         },
         {
             name: "Haircut, Hot Towel Shave",
@@ -17,14 +25,6 @@ export default function Pricing() {
             name: "Haircut, Beard Treatment, Hot Towel Shave",
             price: "$70"
         },
-        {
-            name: "Eyebrows Trimming",
-            price: "$10"
-        },
-        {
-            name: "Undercut",
-            price: "$35"
-        }
     ]
     return (
         <section id="pricing">
@@ -47,7 +47,6 @@ export default function Pricing() {
                                         <b>
                                             {service.name}
                                         </b>
-
                                     </li>
                                 )
                             })}
