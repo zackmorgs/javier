@@ -2,27 +2,27 @@ import { TitleMd } from "./ui/title"
 export default function Pricing() {
     const services = [
         {
-            name:"Adult Haircut",
+            name: "Adult Haircut",
             price: "$40"
         },
         {
-            name:"Kids Haircut",
+            name: "Kids Haircut",
             price: "$35"
         },
         {
-            name:"Haircut with Hot Towel Shave",
+            name: "Haircut, Hot Towel Shave",
             price: "$60"
         },
         {
-            name:"Haircut with Beard Treatment and Hot Towel Shave",
+            name: "Haircut, Beard Treatment, Hot Towel Shave",
             price: "$70"
         },
         {
-            name:"Eyebrows Trimming",
+            name: "Eyebrows Trimming",
             price: "$10"
         },
         {
-            name:"Undercut",
+            name: "Undercut",
             price: "$35"
         }
     ]
@@ -36,32 +36,23 @@ export default function Pricing() {
                         </TitleMd>
                     </div>
                     <div className="">
-                        <table className="table w-full">
-                            <thead className="table-header-group font-bold">
-                                <tr>
-                                    <td>
-                                        Service
-                                    </td>
-                                    <td>
-                                        Price
-                                    </td>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                {services.map((service, index, array)=>{
-                                    return (
-                                        <tr key={index} className="table-row">
-                                            <td>
-                                                {service.name}
-                                            </td>
-                                            <td>
-                                                {service.price}
-                                            </td>
-                                        </tr>
-                                    )
-                                })}
-                            </tbody>
-                        </table>
+                        <ul id="pricing-list" className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols 4 gap-3">
+
+                            {services.map((service, index, array) => {
+                                return (
+                                    <li key={index} className="justify-between shadow py-3 px-3 rounded text-center">
+                                        <p className="text-xl">
+                                            {service.price}
+                                        </p>
+                                        <b>
+                                            {service.name}
+                                        </b>
+
+                                    </li>
+                                )
+                            })}
+
+                        </ul>
                     </div>
                 </div>
             </div>
