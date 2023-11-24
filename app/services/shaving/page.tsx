@@ -40,11 +40,11 @@ export default function Page() {
             </Hero>
             <section id="about-shaving">
                 <div className="xl:max-w-6xl mx-auto py-3 block md:flex md:flex-row">
-                    <div className="px-5 sm:px-6 w-1/3">
+                    <div className="px-5 sm:px-6 md:w-1/3">
                         <Image src="/img/services/straight-razor.jpg" alt="Straight Razor for Shaving" width={375} height={375} />
                     </div>
-                    <div className="px-5 sm:px-6 w-2/3">
-                        <div className="border-b border-gray-300 pb-2 mb-4 inline-block">
+                    <div className="px-5 sm:px-6 md:w-2/3">
+                        <div className="border-b border-gray-300 pb-2 mb-4 pt-4 md:pt-0">
                             <TitleMd>
                                 About Shaving
                             </TitleMd>

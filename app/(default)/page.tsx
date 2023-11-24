@@ -3,7 +3,7 @@ import Services from '@/components/services-homepage';
 import Hours from '@/components/hours';
 import BarbershopMap from '@/components/barbershop-map';
 import ReviewsHomepage from '@/components/reviews-homepage';
-
+import Cta from '@/components/cta';
 export default function Home() {
   return (
     <>
@@ -16,7 +16,7 @@ export default function Home() {
           <BarbershopMap />
         </div>
       </div>
-
+      <Cta/>
 
     </>
   )

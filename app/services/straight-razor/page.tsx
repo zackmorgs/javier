@@ -10,10 +10,10 @@ export default function Page() {
             </Hero>
             <section id="about-straight-razor">
                 <div className="xl:max-w-6xl mx-auto py-3 block md:flex md:flex-row">
-                    <div className="px-5 sm:px-6 w-1/3">
-                        <Image src="/img/services/straight-razor.jpg" width={375} height={375} alt="Straight Razor for shaves and haircuts" />
+                    <div className="px-5 sm:px-6 py-3 md:w-1/3">
+                        <Image src="/img/services/straight-razor.jpg" width={375} height={375} alt="Straight Razor for shaves and haircuts" className="w-full" />
                     </div>
-                    <div className="px-5 sm:px-6 w-2/3">
+                    <div className="px-5 sm:px-6 md:w-2/3">
                         <div className="border-b border-gray-300 pb-2 mb-4">
                             <TitleMd>
                                 About Straight Razor Shaves and Cuts
@@ -23,7 +23,7 @@ export default function Page() {
                             Embrace the timeless tradition of a straight razor shave, a hallmark of classic barbering. Known for its precision and closeness, the straight razor provides a shave that is not only clean but also an experience in itself.
                         </p>
                         <p className="mb-3">
-                            Each shave begins with a thorough preparation of your skin, using high-quality pre-shave oils and hot towels to soften the beard and open up the pores. This prep work ensures a comfortable shave, reducing the risk of irritation and ingrown hairs.
+                            Each shave begins with a thorough preparation of your skin, using high-quality pre-shave oils and to soften the beard and open up the pores. This prep work ensures a comfortable shave, reducing the risk of irritation and ingrown hairs.
                         </p>
                         <p className="mb-3">
                             The straight razor then glides smoothly, offering meticulous attention to every contour of your face. It's not just about removing hair; it's a ritual that pampers your skin, leaving it exceptionally smooth and rejuvenated.
