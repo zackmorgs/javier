@@ -4,6 +4,8 @@ import Image from "next/image"
 import AboutJavier from "./about-javier"
 import AboutBarbershop from "./about-barbershop"
 
+import Cta from "@/components/cta"
+
 export default function Page() {
     return (
         <>
@@ -13,6 +15,7 @@ export default function Page() {
             </Hero>
             <AboutJavier/>
             <AboutBarbershop/>
+            <Cta/>
         </>
     )
 }

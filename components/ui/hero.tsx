@@ -4,11 +4,14 @@ import { TitleXL }  from '@/components/ui/title'
 interface HeroProps {
     title: string;
     children: ReactNode;
+    className?: string; // Explicitly include className
+    // Include any other props you expect
+    [key: string]: any; // This line is for any additional props
 }
 
-export default function Hero({ title, children, ...props }: HeroProps) {
+export default function Hero({ title, children, className, ...rest }: HeroProps) {
     return (
-        <section id="hero" {...props} className={`relative ${props.className || ''}`}>
+        <section id="hero" className={`relative ${className || ''}`}>
             <div id="hero-bg" className="absolute left-1/2 transform -translate-x-1/2 bottom-0 pointer-events-none -z-1" aria-hidden="true">
             </div>
             <div id="hero-text" className="max-w-6xl mx-auto px-4 sm:px-6">
