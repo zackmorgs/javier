@@ -14,7 +14,7 @@ export default function Page() {
                 <p>A bit about me and my barbershop.</p>
             </Hero>
             <AboutJavier/>
-            <AboutBarbershop/>
+            <AboutBarbershop/> 
             <Cta/>
         </>
     )

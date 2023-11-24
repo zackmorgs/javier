@@ -4,8 +4,8 @@ import HaircutServices from "./haircut-services"
 export default function Page() {
     return (
         <>
-            <Hero title="Haircuts">
-                <p>A bit about my haircuts service.</p>
+            <Hero title="Haircuts" className="haircut-hero">
+                <p>Expert haircuts for everyone – any style, any age, any hair type.</p>
             </Hero>
             <HaircutServices />
         </>

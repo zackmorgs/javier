@@ -1,5 +1,7 @@
 import Link from "next/link"
 import Image from "next/image"
+import { TitleMd } from "@/components/ui/title"
+import { FiArrowRight } from "react-icons/fi";
 
 export default function HaircutServices() {
     const haircutServices = [
@@ -14,36 +16,40 @@ export default function HaircutServices() {
             link: "/services/haircut/women"
         },
         {
-            name: "Boy's Haircut",
+            name: "Child's Haircut",
             image: "/img/haircuts/boy/2.jpg",
-            link: "/services/haircuts/boy/"
+            link: "/services/haircuts/child/"
         },
-        {
-            name: "Girl's Haircut",
-            image: "/img/haircuts/women/2.jpg",
-            link: "/services/haircut/girl"
-        }
     ]
     return (
         <>
-            <section className="max-w-6xl mx-auto px-5 sm:px-6 py-3 mb-4">
+            <section id="haircuts-services">
+                <div className="max-w-6xl mx-auto px-5 sm:px-6 py-3 mb-4">
                 <ul className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-3">
                     {haircutServices.map((service, index) => {
                         return (
                             <li key={index}>
-                                <Link href={service.link} className="block text-center">
-                                    <Image 
-                                        src={service.image} 
-                                        width={375} 
-                                        height={375} 
+                                <Link href={service.link} className="block text-center relative overflow-hidden">
+                                    <Image
+                                        src={service.image}
+                                        width={375}
+                                        height={375}
                                         className="w-full"
                                         alt={service.name} />
-                                    <h4 className="mt-3 mb-6 font-bold text-xl">{service.name}</h4>
+                                    <div className="service-text text-white mt-3 pt-3 pb-4 px-4 absolute bottom-0 right-0 left-0">
+                                        <div className="mb-4">
+                                            <TitleMd>{service.name}</TitleMd>
+                                        </div>
+                                        <Link href={service.link} className="btn">
+                                            Learn More <FiArrowRight className="icon inline-block" />
+                                        </Link>
+                                    </div>
                                 </Link>
                             </li>
                         )
                     })}
                 </ul>
+                </div>
             </section>
         </>
     )
