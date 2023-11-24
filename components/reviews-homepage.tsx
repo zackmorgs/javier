@@ -3,7 +3,7 @@ import { useState } from 'react';
 
 import { reviews } from "@/data/reviews"
 
-import { TitleLg}  from '@/components/ui/title'
+import { TitleLg } from '@/components/ui/title'
 import Stars from "./ui/stars"
 
 import { FiArrowRight, FiArrowLeft } from "react-icons/fi";
@@ -38,11 +38,13 @@ export default function ReviewsHomepage() {
                     {displayedReviews.map((review, index) => {
                         return (
                             <li key={index} className="review mb-1 py-2 px-2 border-b">
+
                                 <div className="flex flex-row justify-between mb-2">
                                     <b>{review.name}</b>
                                     <Stars stars={review.stars} />
                                 </div>
                                 <p className="text-gray-600">{review.text}</p>
+
                             </li>
                         )
                     })}

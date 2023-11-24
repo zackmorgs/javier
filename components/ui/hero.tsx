@@ -1,4 +1,4 @@
-import React, { ReactNode } from 'react';
+import React, { ReactNode, HTMLAttributes } from 'react';
 import { TitleXL }  from '@/components/ui/title'
 
 interface HeroProps {
@@ -6,9 +6,9 @@ interface HeroProps {
     children: ReactNode;
 }
 
-export default function Hero({ title, children }: HeroProps) {
+export default function Hero({ title, children, ...props }: HeroProps) {
     return (
-        <section id="hero" className="relative">
+        <section id="hero" {...props} className={`relative ${props.className || ''}`}>
             <div id="hero-bg" className="absolute left-1/2 transform -translate-x-1/2 bottom-0 pointer-events-none -z-1" aria-hidden="true">
             </div>
             <div id="hero-text" className="max-w-6xl mx-auto px-4 sm:px-6">

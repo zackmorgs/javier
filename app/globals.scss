@@ -133,6 +133,7 @@ body {
 
 p a {
   border-bottom:2px solid var(--main-blue);
+  display: inline-block;
 }
 p a:hover {
   border-color:#0c0cf5;
@@ -149,7 +150,11 @@ p a:hover {
   background-size: cover;
   background-position: 50% 50%;
 }
-
+.about-hero {
+  background: url('/img/bike-bw-faded.jpg');
+  background-size: cover;
+  background-position: 50% 50%;
+}
 /* .service-homepage {
   transition:transform .3s ease;
 }
@@ -162,6 +167,9 @@ p a:hover {
 }
 .service-picture {
   transition:transform .3s ease;
+}
+.service-text {
+  background:#0000003b;
 }
 .service-homepage:hover .service-picture {
   transform:scale(1.1);

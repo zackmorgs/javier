@@ -7,7 +7,8 @@ import AboutBarbershop from "./about-barbershop"
 export default function Page() {
     return (
         <>
-            <Hero title="About">
+            {/* i get an error in my code but it works */}
+            <Hero title="About" className="about-hero">
                 <p>A bit about me and my barbershop.</p>
             </Hero>
             <AboutJavier/>
