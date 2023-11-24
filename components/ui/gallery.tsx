@@ -28,7 +28,7 @@ export default function Gallery({ title, galleryImages, className }: GalleryProp
                 <div className="border-b border-gray-300 pb-2 mb-4 text-center">
                     <TitleMd>{title}</TitleMd>
                 </div>
-                <ul className="gallery-list grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+                <ul className="gallery-list grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-3">
                     {galleryImages.map((image, index) => (
                         <li key={index} className="cursor-pointer">
                             <Image
