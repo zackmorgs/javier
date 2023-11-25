@@ -28,8 +28,8 @@ export default function Pricing() {
     ]
     return (
         <section id="pricing">
-            <div className="xl:max-w-6xl mx-auto py-3 block">
-                <div className="px-5 sm:px-6 py-4 bg-white rounded">
+            <div className="xl:max-w-7xl mx-auto py-3 block">
+                <div className="px-5 sm:px-6 py-4">
                     <div className="border-b border-gray-300 pb-2 mb-4 text-center">
                         <TitleMd>
                             Pricing
@@ -40,7 +40,7 @@ export default function Pricing() {
 
                             {services.map((service, index, array) => {
                                 return (
-                                    <li key={index} className="justify-between shadow py-3 px-3 rounded text-center">
+                                    <li key={index} className="justify-between shadow py-3 px-3 rounded text-center bg-white">
                                         <p className="text-xl">
                                             {service.price}
                                         </p>

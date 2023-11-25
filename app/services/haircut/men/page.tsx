@@ -2,6 +2,7 @@ import Image from 'next/image';
 import Hero from "@/components/ui/hero"
 import Gallery from '@/components/ui/gallery';
 import { TitleMd } from '@/components/ui/title';
+import Pricing from "@/components/pricing";
 import Cta from "@/components/cta"
 
 export default function Page() {
@@ -73,6 +74,7 @@ export default function Page() {
                     </div>
                 </div>
             </section>
+            <Pricing/>
             <Cta />
         </>
     )
