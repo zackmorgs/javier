@@ -15,6 +15,14 @@ export default function Page() {
             src: "/img/haircuts/boy/2.jpg",
             alt: "Child's Haircut"
         },
+        {
+            src: "/img/haircuts/boy/3.jpg",
+            alt: "Child's Haircut"
+        },
+        {
+            src: "/img/haircuts/boy/4.jpg",
+            alt: "Child's Haircut"
+        },
     ];
 
     return (
@@ -43,7 +51,7 @@ export default function Page() {
                         </p>
                     </div>
                     <div className="px-4 sm:px-6 py-6 md:w-1/2">
-                        <Image src="/img/services/straight-razor.jpg" alt="" width={375} height={375} className="w-full" />
+                        <Image src="/img/haircuts/boy/5.jpg" alt="" width={375} height={375} className="w-full" />
                     </div>
                 </div>
             </section>

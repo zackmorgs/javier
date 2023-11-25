@@ -4,6 +4,7 @@ import Hours from '@/components/hours';
 import BarbershopMap from '@/components/barbershop-map';
 import ReviewsHomepage from '@/components/reviews-homepage';
 import Pricing from "@/components/pricing";
+import LeaveAReview from "@/components/leave-a-review";
 import Cta from '@/components/cta';
 export default function Home() {
   return (
@@ -18,6 +19,7 @@ export default function Home() {
         </div>
       </div>
       <Pricing/>
+      <LeaveAReview/>
       <Cta/>
 
     </>

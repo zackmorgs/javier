@@ -3,6 +3,7 @@ import { FiPhone } from "react-icons/fi";
 import { TitleMd, TitleSm } from "@/components/ui/title";
 import Hours from "@/components/hours";
 import MapComponent from "@/components/barbershop-map";
+import LeaveAReview from "@/components/leave-a-review";
 import Cta from "@/components/cta";
 
 export default function Page() {
@@ -17,8 +18,8 @@ export default function Page() {
                 </div>
             </Hero>
             <section id="contact">
-                <div className="max-w-6xl mx-auto block md:flex md:flex-row">
-                    <div className="px-4 sm:px-6 md:w-1/3">
+                <div className="max-w-7xl mx-auto block md:flex md:flex-row">
+                    <div className="px-4 sm:px-6 md:w-1/2">
                         <div className="border-b border-gray-300 pb-2 mb-4 ">
                             <TitleMd>
                                 Get in Touch
@@ -28,7 +29,7 @@ export default function Page() {
                             Whether you're looking for a new style, need advice on grooming, or want to book your next appointment, I'm here to help. Use the information below to contact me, and I'll get back to you as soon as possible.
                         </p>
                     </div>
-                    <div id="contact-details" className="md:w-2/3 px-4 sm:px-6 py-4 md:py-0">
+                    <div id="contact-details" className="md:w-1/2 px-4 sm:px-6 py-4 md:py-0">
                         <div className="border-b border-gray-300 pb-2 mb-4 ">
                             <TitleMd>
                                 Contact
@@ -42,7 +43,7 @@ export default function Page() {
                 </div>
             </section>
             <section id="more-info">
-                <div className="xl:max-w-6xl mx-auto py-3 mb-4">
+                <div className="xl:max-w-7xl mx-auto py-3 mb-4">
                     <div className="flex flex-col md:flex-row justify-between md:justify-between">
                         <Hours />
                         <MapComponent />
@@ -50,7 +51,8 @@ export default function Page() {
 
                 </div>
             </section>
-            <Cta />
+            <LeaveAReview/>
+            {/* <Cta /> */}
         </>
 
     )
