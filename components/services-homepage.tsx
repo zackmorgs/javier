@@ -18,6 +18,7 @@ export default function Services() {
 
     return (
         <section id="services-homepage" className="pb-3">
+            {/* <Image src="/svg/scissors.svg" height={64} width={64} alt="scissors" className="mx-auto mt-6" /> */}
             <div className="xl:max-w-7xl mx-auto px-5 sm:px-6 py-3">
                 <div className="border-b border-gray-300 text-center mb-4 pb-3">
                     <TitleLg>Services</TitleLg>
