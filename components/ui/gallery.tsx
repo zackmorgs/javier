@@ -24,7 +24,7 @@ export default function Gallery({ title, galleryImages, className }: GalleryProp
 
     return (
         <section className={`gallery ${className || ''}`}>
-            <div className="max-w-6xl mx-auto px-5 sm:px-6 py-3 mb-4">
+            <div className="max-w-7xl mx-auto px-5 sm:px-6 py-3 mb-4">
                 <div className="border-b border-gray-300 pb-2 mb-4 text-center">
                     <TitleMd>{title}</TitleMd>
                 </div>
