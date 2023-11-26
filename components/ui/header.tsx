@@ -1,5 +1,7 @@
 'use client'
 
+import '@/styles/navigation.scss';
+
 import { useState, useEffect } from 'react'
 
 import Link from 'next/link'
