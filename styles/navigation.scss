@@ -13,6 +13,9 @@
 
 #hamburger {
     position: relative;
+    margin-right:0.3rem;
+    display:block;
+    padding:0.333rem;
 }
 
 #hamburger span {
@@ -25,7 +28,7 @@
     transition-duration: 86ms;
     transition-property: background-color, opacity, transform;
     transition-timing-function: ease-out;
-    width: 18px;
+    width: 20px;
 }
 
 #hamburger span:first-child {
@@ -44,11 +47,11 @@
     transform: translateY(5px) rotate(45deg);
 }
 
-.active span:nth-child(2) {
+.active #hamburger span:nth-child(2) {
     opacity: 0;
 }
 
-.active span:nth-child(3) {
+.active #hamburger span:nth-child(3) {
     transform: translateY(-5px) rotate(-45deg);
 }
 
