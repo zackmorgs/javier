@@ -37,13 +37,13 @@ export default function Page() {
                             </TitleMd>
                         </div>
                         <p className="mb-3">
-                            At Javier's Barbershop, we understand that a woman's haircut is more than just a routine trim. It's an expression of her personality and style. Our expert stylists are here to create a look that complements your individuality and enhances your natural beauty.
+                            At Javier's Barbershop, we understand that a woman's haircut is more than just a routine trim. It's an expression of her personality and style. I am are here to create a look that complements your individuality and enhances your natural beauty.
                         </p>
                         <p className="mb-3">
-                            From chic bobs to flowing layers, every cut is executed with precision and care. We stay up-to-date with the latest trends and techniques to bring you a range of contemporary and classic styles. Whether you're looking for a dramatic change or a simple refresh, we're dedicated to achieving your perfect look.
+                            From chic bobs to flowing layers, every cut is executed with precision and care. I stay up-to-date with the latest trends and techniques to bring you a range of contemporary and classic styles. Whether you're looking for a dramatic change or a simple refresh, I'm dedicated to achieving your perfect look.
                         </p>
                         <p className="mb-3">
-                            Enjoy a relaxing and welcoming atmosphere as we work together to create your ideal hairstyle. Your satisfaction is our priority, and we're committed to providing a hairstyling experience that leaves you feeling confident and refreshed.
+                            Enjoy a relaxing and welcoming atmosphere as we work together to create your ideal hairstyle. Your satisfaction is our priority, and I'm committed to providing a hairstyling experience that leaves you feeling confident and refreshed.
                         </p>
                     </div>
                     <div className="px-4 sm:px-6 py-6 md:w-1/2">
