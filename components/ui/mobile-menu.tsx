@@ -3,6 +3,7 @@
 import { useState, useRef, useEffect } from 'react'
 import { Transition } from '@headlessui/react'
 import Link from 'next/link'
+import { FiCalendar, FiPhone } from "react-icons/fi";
 
 export default function MobileMenu() {
   const [mobileNavOpen, setMobileNavOpen] = useState<boolean>(false)
@@ -87,8 +88,13 @@ export default function MobileMenu() {
               )
             })}
             <li className="border-t pt-3">
-              <Link href="/book-appointment" className="flex w-full py-2 justify-center bg-black text-gray-50 hover:bg-black-900 rounded-md" onClick={() => setMobileNavOpen(false)}>
-                Book an Appointment
+              <Link href="/book-appointment" className="block w-full py-2 text-center bg-black text-gray-50 hover:bg-black-900 rounded-md" onClick={() => setMobileNavOpen(false)}>
+                <FiCalendar className="icon inline-block" /> Book an Appointment
+              </Link>
+            </li>
+            <li className="pt-3">
+              <Link href="tel:+15073192140" className="block w-full py-2 text-center bg-black text-gray-50 hover:bg-black-900 rounded-md" onClick={() => setMobileNavOpen(false)}>
+                <FiPhone className="icon inline-block" /> Call
               </Link>
             </li>
           </ul>
