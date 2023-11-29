@@ -4,6 +4,7 @@ import Image from "next/image"
 import AboutJavier from "./about-javier"
 import AboutBarbershop from "./about-barbershop"
 
+import MapComponent from "@/components/barbershop-map"
 import Cta from "@/components/cta"
 
 export default function Page() {
@@ -13,9 +14,20 @@ export default function Page() {
             <Hero title="About" className="about-hero">
                 <p>A bit about me and my barbershop.</p>
             </Hero>
-            <AboutJavier/>
-            <AboutBarbershop/> 
-            <Cta/>
+            <AboutJavier />
+            {/* <AboutBarbershop/>  */}
+            <section>
+                <div className="xl:max-w-7xl mx-auto">
+                    <div className="block md:flex md:flex-row">
+                        <div className="md:w-1/2">
+                            <MapComponent />
+                        </div>
+                        <div className="md:w-1/2">
+                            <Cta />
+                        </div>
+                    </div>
+                </div>
+            </section>
         </>
     )
 }

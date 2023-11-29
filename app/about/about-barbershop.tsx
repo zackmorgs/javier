@@ -16,14 +16,6 @@ export default function AboutBarbershop() {
                     </p>
                     <p>The barbershop is </p>
                 </div>
-                <div className="px-5 sm:px-6 py-3">
-                    <div className="mb-4 border-b border-gray-300 pb-4">
-                        <TitleMd>Address</TitleMd>
-                    </div>
-                    <address>
-                        1112 9th St NE Rochester, MN 55906
-                    </address>
-                </div>
             </div>
         </section>
     )
