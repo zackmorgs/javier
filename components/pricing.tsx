@@ -2,7 +2,7 @@ import { TitleMd } from "./ui/title"
 export default function Pricing() {
     const services = [
         {
-            name: "Eyebrows Trimming",
+            name: "Eyebrow Trimming",
             price: "$10"
         },
         {
