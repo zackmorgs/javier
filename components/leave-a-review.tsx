@@ -7,7 +7,7 @@ export default function LeaveAReview() {
         <section id="leave-a-review">
             <div className="xl:max-w-7xl mx-auto py-3 mb-4">
                 <div className="px-4 sm:px-6">
-                    <div className="px-4 sm:px-6 py-4 bg-white">
+                    <div className="px-4 sm:px-6 py-4 bg-white shadow ">
                         <div className="border-b border-gray-300 pb-2 mb-4">
                             <TitleMd>
                                 Leave a Review

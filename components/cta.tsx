@@ -7,7 +7,7 @@ export default function Cta() {
     return (
         <section id="cta">
             <div className="xl:max-w-7xl mx-auto px-5 sm:px-6 py-3">
-                <div id="cta-card" className="px-5 sm:px-6 py-3 rounded">
+                <div id="cta-card" className="px-5 sm:px-6 py-3 bg-white shadow">
                     <div className="mb-4 border-b border-gray-300 pb-4">
                         <TitleMd>Book an Appointment</TitleMd>
                     </div>
