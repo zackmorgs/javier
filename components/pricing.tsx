@@ -40,8 +40,8 @@ export default function Pricing() {
 
                             {services.map((service, index, array) => {
                                 return (
-                                    <li key={index} className="justify-between shadow py-3 px-3 rounded text-center bg-white">
-                                        <p className="text-xl">
+                                    <li key={index} className="price justify-between shadow py-3 px-3 rounded text-center bg-white">
+                                        <p className="text-2xl">
                                             {service.price}
                                         </p>
                                         <b>
