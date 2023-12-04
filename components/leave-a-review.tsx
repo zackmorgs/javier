@@ -23,7 +23,7 @@ export default function LeaveAReview() {
                             {reviewMeLinks.map((link, index, array) => {
                                 return (
                                     <li key={index}>
-                                        <Link href={link.url} className="btn btn-tertiary mt-3 md:mr-3 h-16 md:h-12">
+                                        <Link href={link.url} className="btn btn-secondary mt-3 md:mr-3 h-16 md:h-12">
                                             <Image src={link.image} alt={link.name} width={50} height={50} className="mx-auto h-full" />
                                         </Link>
                                     </li>
