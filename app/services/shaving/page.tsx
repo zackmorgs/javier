@@ -74,7 +74,7 @@ export default function Page() {
                 <div className="xl:max-w-7xl mx-auto py-3">
                     <div className="flex flex-col md:flex-row justify-between">
                         <div className="px-6 md:px-5">
-                            <Image src="/img/beard-trimming-1-edit.jpg" width={600} height={600} alt="Beard shaving" />
+                            <Image src="/img/beard-trimming-1-edit.jpg" width={600} height={600} alt="Beard shaving" className="mb-3" />
                         </div>
                         <div className="px-6 md:px-5">
                             <Image src="/img/beard-trimming-2-edit.jpg" width={600} height={600} alt="Beard shaving" />
