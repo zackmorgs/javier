@@ -15,7 +15,7 @@ export default function AboutJavier() {
                             <div className="mb-4 border-b border-gray-300 pb-4">
                                 <TitleMd>Who I Am</TitleMd>
                             </div>
-                            <p className="text-xl mb-2">My name is Javier. </p>
+                            <p className="text-xl mb-2">My name is Javier Thomas. </p>
                             <p className="mb-2">I am from <Link href="https://www.google.com/maps/place/Ponce,+Puerto+Rico/@17.2532577,-63.001475,7z/data=!4m6!3m5!1s0x8c1cd5813b1ddf7f:0x274b92c47106eee2!8m2!3d18.0110768!4d-66.6140616!16zL20vMGxnMHI" target="_blank">Ponce, Puerto Rico</Link> and I live and work in Rochester, MN.</p>
                             <p className="mb-2">I have two kids and love motorcycles.</p>
                             <p className="mb-2">I am a professional barber with 20 years of experience for all people young and old.</p>
