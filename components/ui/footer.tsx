@@ -6,7 +6,7 @@ export default function Footer() {
     { name: "Haircut", href: "/services/haircut" },
     { name: "Shaving", href: "/services/shaving" },
     { name: "Straight Razor", href: "/services/straight-razor" },
-    // { name: "Branding & Creative Services", href: "/services/branding" },
+    { name: "Hot Towel", href: "/services/hot-towel" },
   ];
   const companyLinks = [
     { name: "Home", href: "/" },

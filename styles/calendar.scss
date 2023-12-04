@@ -1,0 +1,18 @@
+#calendar {
+
+}
+
+#calendar-days {
+
+}
+
+.calendar-day {
+    background-color:white;
+    padding:0.25rem;
+}
+.calendar-day.null-date {
+    background-color:transparent;
+}
+.calendar-day.selected {
+    color:blue;
+}
