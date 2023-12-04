@@ -9,10 +9,10 @@ export default function AboutJavier() {
                 <div className="xl:max-w-7xl mx-auto py-3">
                     <div className="flex flex-col md:flex-row">
                         <div className="basis-1/4 px-5 sm:px-6 md:order-last">
-                            <Image alt="Picture of Javier" src="/img/javier.webp" width={375} height={375} className="w-full mb-3" />
+                            <Image alt="Picture of Javier" src="/img/javier.webp" width={750} height={750} className="w-full mb-3" />
                         </div>
                         <div className="basis-3/4 px-5 sm:px-6">
-                            <div className="mb-4 border-b border-gray-300 pb-4">
+                            <div className="mt-3 md:mt-0 mb-4 border-b border-gray-300 pb-4">
                                 <TitleMd>Who I Am</TitleMd>
                             </div>
                             <p className="text-xl mb-2">My name is Javier Thomas. </p>
