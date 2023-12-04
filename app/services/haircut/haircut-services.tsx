@@ -3,6 +3,7 @@ import Image from "next/image"
 import { TitleMd } from "@/components/ui/title"
 import { FiArrowRight } from "react-icons/fi";
 import Pricing from "@/components/pricing";
+import Cta from "@/components/cta";
 
 export default function HaircutServices() {
     const haircutServices = [
@@ -77,7 +78,7 @@ export default function HaircutServices() {
 
             </section>
             <Pricing />
-
+            <Cta/>
         </>
     )
 }
