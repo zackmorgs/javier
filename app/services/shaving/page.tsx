@@ -9,27 +9,27 @@ export default function Page() {
     const images = [
         {
             src: "/img/haircuts/men/8.jpg",
-            alt: "Men's Haircut"
+            alt: "Men's Shave"
         },
         {
             src: "/img/haircuts/men/2.jpg",
-            alt: "Men's Haircut"
+            alt: "Men's Shave"
         },
         {
             src: "/img/haircuts/men/3.jpg",
-            alt: "Men's Haircut"
+            alt: "Men's Shave"
         },
         {
             src: "/img/haircuts/men/5.jpg",
-            alt: "Men's Haircut"
+            alt: "Men's Shave"
         },
         {
             src: "/img/haircuts/men/6.jpg",
-            alt: "Men's Haircut"
+            alt: "Men's Shave"
         },
         {
             src: "/img/haircuts/men/7.jpg",
-            alt: "Men's Haircut"
+            alt: "Men's Shave"
         },
     ];
 
@@ -41,7 +41,7 @@ export default function Page() {
             <section id="about-shaving">
                 <div className="xl:max-w-6xl mx-auto py-3 block md:flex md:flex-row">
                     <div className="px-5 sm:px-6 md:w-1/3">
-                        <Image src="/img/services/straight-razor.jpg" alt="Straight Razor for Shaving" width={375} height={375} />
+                        <Image src="/img/services/straight-razor.jpg" alt="Straight Razor for Shaving" width={640} height={640} />
                     </div>
                     <div className="px-5 sm:px-6 md:w-2/3">
                         <div className="border-b border-gray-300 pb-2 mb-4 pt-4 md:pt-0">
@@ -65,6 +65,24 @@ export default function Page() {
                 </div>
             </section>
             <Gallery title="Shaving Examples" className="shaving" galleryImages={images} />
+            <section>
+                <div className="xl:max-w-7xl mx-auto py-3">
+                    <div className="px-6 md:px-5 flex justify-center">
+                        <Image src="/img/straight-razor-2-edited.jpg" width={1024} height={1024} alt="Shaving"  className="w-full"/>
+                    </div>
+                </div>
+                <div className="xl:max-w-7xl mx-auto py-3">
+                    <div className="flex flex-col md:flex-row justify-between">
+                        <div className="px-6 md:px-5">
+                            <Image src="/img/beard-trimming-1-edit.jpg" width={600} height={600} alt="Beard shaving" />
+                        </div>
+                        <div className="px-6 md:px-5">
+                            <Image src="/img/beard-trimming-2-edit.jpg" width={600} height={600} alt="Beard shaving" />
+                        </div>
+                    </div>
+                </div>
+
+            </section>
             <Cta />
         </>
     )
