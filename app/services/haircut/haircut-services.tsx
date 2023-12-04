@@ -70,6 +70,9 @@ export default function HaircutServices() {
                             Using the best tools and techniques, we focus on quality and detail in every snip and trim. Our mission is to ensure that every client steps out feeling confident and looking their absolute best.
                         </p>
                     </div>
+                    <div className="px-4 sm:px-6 md:w-1/2">
+                        <Image src="/img/haircuts/men/4.jpg" width={625} height={625} alt="Haircut" className="w-full" />
+                    </div>
                 </div>
 
             </section>
