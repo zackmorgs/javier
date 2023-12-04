@@ -61,13 +61,13 @@ export default function HaircutServices() {
                             </TitleMd>
                         </div>
                         <p className="mb-3">
-                            At Javier's Barbershop, each haircut is an expression of personal style and artistry. We pride ourselves on delivering tailored experiences, whether it's a sleek and modern cut for the contemporary man, a chic and versatile style for women, or a fun and comfortable haircut for kids.
+                            At Javier's Barbershop, each haircut is an expression of personal style and artistry. I pride myself on delivering tailored experiences, whether it's a sleek and modern cut for the contemporary man, a chic and versatile style for women, or a fun and comfortable haircut for kids.
                         </p>
                         <p className="mb-3">
-                            For men, I offer a range from classic barber cuts to the latest trends, ensuring each client leaves looking sharp and distinguished. Women's cuts at our shop are all about enhancing natural beauty with styles that range from elegant bobs to luxurious long layers. And when it comes to children, we ensure a welcoming environment with gentle care, making their haircut experience enjoyable and stylish.
+                            For men, I offer a range from classic barber cuts to the latest trends, ensuring each client leaves looking sharp and distinguished. Women's cuts at our shop are all about enhancing natural beauty with styles that range from elegant bobs to luxurious long layers. And when it comes to children, I ensure a welcoming environment with gentle care, making their haircut experience enjoyable and stylish.
                         </p>
                         <p className="mb-3">
-                            Using the best tools and techniques, we focus on quality and detail in every snip and trim. Our mission is to ensure that every client steps out feeling confident and looking their absolute best.
+                            Using the best tools and techniques, I focus on quality and detail in every snip and trim. My mission is to ensure that every client steps out feeling confident and looking their absolute best.
                         </p>
                     </div>
                     <div className="px-4 sm:px-6 md:w-1/2">
