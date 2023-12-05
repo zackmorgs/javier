@@ -32,12 +32,18 @@ body {
   padding: 1rem;
   text-align: center;
   transition: background-color .3s ease;
-  border-radius:0.25rem; 
+  border-radius:0.25rem;
+  &:hover {
+    // background: #393939;
+    background:linear-gradient(90deg, lighten(black,10%), lighten(black, 20%));
+  }
 }
-
-.btn:hover {
-  // background: #393939;
-  background:linear-gradient(90deg, lighten(black,10%), lighten(black, 20%));
+.btn[disabled] {
+  background:grey;
+  color:white;
+  &:hover {
+    background:grey;
+  }
 }
 
 .btn .icon {

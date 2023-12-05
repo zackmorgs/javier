@@ -5,14 +5,52 @@
 #calendar-days {
 
 }
-
+.day-of-week {
+    text-transform:lowercase;
+    text-align:center;
+}
 .calendar-day {
     background-color:white;
-    padding:0.25rem;
+    padding:0.5rem;
+    border-radius:0.25rem;
+    transition:transform .3s ease;
+    text-align:center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .date {
+        
+    }
+    &.today {
+        background-color:#0887dd;
+        color:white;
+    }
+    &.selected {
+        background:black;
+        color:white;
+    }
+    &.disabled {
+        background:#cdcdcd;
+        color:#919191;
+        pointer-events:none;
+    }
+    &.null-date {
+        background-color:transparent;
+    }
 }
-.calendar-day.null-date {
-    background-color:transparent;
+
+@media (min-width: 640px) {}
+
+@media (min-width: 768px) {
+    .calendar-day {
+        padding:0.5rem;
+        height:4rem;
+        
+    }
 }
-.calendar-day.selected {
-    color:blue;
-}
+
+@media (min-width: 1024px) {}
+
+@media (min-width: 1280px) {}
+
+@media (min-width: 1536px) {}
