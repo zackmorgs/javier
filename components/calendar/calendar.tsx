@@ -152,11 +152,11 @@ export default class Calendar extends Component<{}, CalendarState> {
     }
     isValidDateSelected = (): boolean => {
         const { selectedDate } = this.state;
-        return selectedDate && 
-               !this.isPreviousDay(selectedDate) &&
-               !this.isSunday(selectedDate) &&
-               !this.isHoliday(selectedDate) &&
-               !this.isDayOff(selectedDate);
+        return selectedDate &&
+            !this.isPreviousDay(selectedDate) &&
+            !this.isSunday(selectedDate) &&
+            !this.isHoliday(selectedDate) &&
+            !this.isDayOff(selectedDate);
     };
     handleSelectDateClick = (): void => {
         console.log("date selected:", this.state.selectedDate);
@@ -177,22 +177,24 @@ export default class Calendar extends Component<{}, CalendarState> {
                     {daysOfWeek.map(day => (
                         <div key={day} className="day-of-week">{day}</div>
                     ))}
-                    {this.state.dates.map((date, index) => (
-                        <CalendarDay
-                            key={index}
-                            date={date?date:new Date()}
-                            selected={this.isSelectedDate(date?date:new Date())}
-                            onClick={date ? this.handleDayClick(date) : undefined}
-                            enabled={!this.isPreviousDay(date?date:new Date()) && !this.isSunday(date?date:new Date()) && !this.isHoliday(date?date:new Date()) && !this.isDayOff(date?date:new Date())}
-                            isToday={this.isToday(date?date:new Date())}
-                        />
-                    ))}
+                    {this.state.dates.map((date, index) => {
+                        return (
+                            <CalendarDay
+                                key={index}
+                                date={date ? date : new Date()}
+                                selected={this.isSelectedDate(date ? date : new Date())}
+                                onClick={date ? this.handleDayClick(date) : undefined}
+                                enabled={!this.isPreviousDay(date ? date : new Date()) && !this.isSunday(date ? date : new Date()) && !this.isHoliday(date ? date : new Date()) && !this.isDayOff(date ? date : new Date())}
+                                isToday={this.isToday(date ? date : new Date())}
+                            />
+                        )
+                    })}
                 </div>
                 <div className="flex justify-center md:justify-start">
                     <div className="mt-4">
-                        <button 
+                        <button
                             id="select_date"
-                            className="btn btn-primary" 
+                            className="btn btn-primary"
                             disabled={!this.isValidDateSelected()}
                             onClick={this.handleSelectDateClick}>
                             Select Date
