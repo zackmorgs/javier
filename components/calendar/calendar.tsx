@@ -15,7 +15,7 @@ const months = [
 
 type CalendarState = {
     selectedDate: Date;
-    dates: Date;
+    dates: (Date | null)[];  // Corrected type
     today: Date;
 };
 
@@ -24,7 +24,7 @@ export default class Calendar extends Component<{}, CalendarState> {
         super(props);
         this.state = {
             selectedDate: new Date(),
-            dates: [],
+            dates: new Array<Date>,
             today: new Date()
         };
     }
@@ -44,7 +44,7 @@ export default class Calendar extends Component<{}, CalendarState> {
         return new Date(date.getFullYear(), date.getMonth() + 1, 0).getDate();
     };
 
-    getDates = (date: Date): (Date | null)[] => {
+    getDates = (date: Date): (Date)[] => {
         const totalDays = this.daysInMonth(date);
         const firstDayOfMonth = new Date(date.getFullYear(), date.getMonth(), 1).getDay();
         const lastDayOfMonth = new Date(date.getFullYear(), date.getMonth() + 1, 0).getDay();
@@ -102,7 +102,7 @@ export default class Calendar extends Component<{}, CalendarState> {
             });
         };
     };
-    isPreviousDay = (date: Date | null): boolean => {
+    isPreviousDay = (date: Date): boolean => {
         if (!date) return false;
 
         const today = this.state.today;
@@ -112,7 +112,7 @@ export default class Calendar extends Component<{}, CalendarState> {
         return date < startOfToday;
     };
 
-    isSelectedDate = (date: Date | null): boolean => {
+    isSelectedDate = (date: Date): boolean => {
         const { selectedDate } = this.state;
 
         return date && selectedDate &&
@@ -121,7 +121,7 @@ export default class Calendar extends Component<{}, CalendarState> {
             date.getFullYear() === selectedDate.getFullYear();
     };
 
-    isToday = (date: Date | null): boolean => {
+    isToday = (date: Date): boolean => {
         const { today } = this.state;
 
         return date &&
@@ -129,11 +129,11 @@ export default class Calendar extends Component<{}, CalendarState> {
             date.getMonth() === today.getMonth() &&
             date.getFullYear() === today.getFullYear();
     };
-    isSunday = (date: Date | null): boolean => {
+    isSunday = (date: Date): boolean => {
         return date ? date.getDay() === 0 : false;
     };
 
-    isHoliday = (date: Date | null): boolean => {
+    isHoliday = (date: Date): boolean => {
         if (!date) return false;
 
         const holidays = [
@@ -147,7 +147,7 @@ export default class Calendar extends Component<{}, CalendarState> {
         );
     };
 
-    isDayOff = (date: Date | null): boolean => {
+    isDayOff = (date: Date): boolean => {
         return false;
     }
     isValidDateSelected = (): boolean => {
@@ -180,11 +180,11 @@ export default class Calendar extends Component<{}, CalendarState> {
                     {this.state.dates.map((date, index) => (
                         <CalendarDay
                             key={index}
-                            date={date}
-                            selected={this.isSelectedDate(date)}
+                            date={date?date:new Date()}
+                            selected={this.isSelectedDate(date?date:new Date())}
                             onClick={date ? this.handleDayClick(date) : undefined}
-                            enabled={!this.isPreviousDay(date) && !this.isSunday(date) && !this.isHoliday(date) && !this.isDayOff(date)}
-                            isToday={this.isToday(date)}
+                            enabled={!this.isPreviousDay(date?date:new Date()) && !this.isSunday(date?date:new Date()) && !this.isHoliday(date?date:new Date()) && !this.isDayOff(date?date:new Date())}
+                            isToday={this.isToday(date?date:new Date())}
                         />
                     ))}
                 </div>

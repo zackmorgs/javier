@@ -1,5 +1,5 @@
 interface CalendarDayProps {
-    date: Date;
+    date: Date;  // Allow date to be null
     selected: boolean;
     [key: string]: any; // This line is for any additional props
     onClick?: () => void; // Optional onClick function
