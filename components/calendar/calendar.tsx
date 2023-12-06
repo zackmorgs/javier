@@ -4,6 +4,7 @@ import CalendarDay from "./calendar-day";
 import { TitleMd } from "../ui/title";
 import { FiArrowLeft, FiArrowRight } from "react-icons/fi";
 import { select } from "@material-tailwind/react";
+import Link from 'next/link';
 
 import '@/styles/calendar.scss';
 
@@ -18,6 +19,8 @@ type CalendarState = {
     dates: (Date | null)[];  // Corrected type
     today: Date;
 };
+
+
 
 export default class Calendar extends Component<{}, CalendarState> {
     constructor(props: {}) {
@@ -160,6 +163,19 @@ export default class Calendar extends Component<{}, CalendarState> {
     };
     handleSelectDateClick = (): void => {
         console.log("date selected:", this.state.selectedDate);
+        
+    }
+    getSelectedHref = (): string => {
+        if (this.isValidDateSelected()){
+            let day = this.state.selectedDate.getDate();
+            let year = this.state.selectedDate.getFullYear();
+            let month = this.state.selectedDate.getMonth() + 1;
+            let href = `/book-appointment/date/${month}/${day}/${year}`;
+
+            return href;
+        } else {
+            return "";
+        }
     }
     render() {
 
@@ -192,13 +208,12 @@ export default class Calendar extends Component<{}, CalendarState> {
                 </div>
                 <div className="flex justify-center md:justify-start">
                     <div className="mt-4">
-                        <button
+                        <Link
                             id="select_date"
                             className="btn btn-primary"
-                            disabled={!this.isValidDateSelected()}
-                            onClick={this.handleSelectDateClick}>
+                            href={this.getSelectedHref()}>
                             Select Date
-                        </button>
+                        </Link>
                     </div>
                 </div>
             </div>
