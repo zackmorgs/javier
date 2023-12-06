@@ -10,7 +10,7 @@ export default function Page({ params }: { params: { month: number, day:number, 
   return (
     <>
       <Hero title="Book an Appointment">
-        Book an appointment for {months[appointmentDate.getMonth()] + " " + appointmentDate.getDate() + ", " + appointmentDate.getFullYear() }
+        {months[appointmentDate.getMonth()] + " " + appointmentDate.getDate() + ", " + appointmentDate.getFullYear() }
       </Hero>
       <Schedule initialDate={appointmentDate}/>
     </>
