@@ -47,7 +47,7 @@ export default function Page() {
                             I am skilled in a variety of styles, from classic cuts to trendy looks, perfect for school, play, and special occasions. Whether it's their first haircut or a regular trim, I make sure every child leaves our chair with a smile and a style they love.
                         </p>
                         <p className="mb-3">
-                            Our barbershop is kid-friendly, with a warm and welcoming atmosphere to make children feel at ease. We believe in making haircut time a fun and stress-free experience for both parents and children.
+                            My barbershop is kid-friendly, with a warm and welcoming atmosphere to make children feel at ease. We believe in making haircut time a fun and stress-free experience for both parents and children.
                         </p>
                     </div>
                     <div className="px-4 sm:px-6 py-6 md:w-1/2">
