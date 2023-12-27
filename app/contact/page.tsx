@@ -26,7 +26,7 @@ export default function Page() {
                             </TitleMd>
                         </div>
                         <p className="mb-3">
-                            Whether you're looking for a new style, need advice on grooming, or want to book your next appointment, I'm here to help. Use the information below to contact me, and I'll get back to you as soon as possible.
+                            Whether you're looking for a new style, need advice on grooming, or want to book your next appointment, I'm here to help. Use the information on this page to contact me, and I'll get back to you as soon as possible.
                         </p>
                     </div>
                     <div id="contact-details" className="md:w-1/2 px-4 sm:px-6 py-4 md:py-0">
@@ -37,7 +37,7 @@ export default function Page() {
                         </div>
                         <ul className="list-none mt-3">
                             <li><p><strong>Phone:</strong> <a href="tel:+15073192140">507-319-2140</a></p></li>
-                            <li><p><strong>Email:</strong> <a href="mailto:javierbthomas678@gmail.com">javierbthomas678@gmail.com</a></p></li>
+                            <li><p><strong>Email:</strong> <a href="mailto:javierbthomas678@gmail.com"> javierbthomas678@gmail.com</a></p></li>
                         </ul>
                     </div>
                 </div>
