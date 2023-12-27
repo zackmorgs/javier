@@ -8,6 +8,16 @@
         "src": "/favicon.ico",
         "sizes": "any",
         "type": "image/x-icon"
+    },
+    {
+        "src" :"/apple-icon.png",
+        "sizes" : "57x57 60x60 73x72 114x114 152x152 180x180",
+        "type" : "image/png"
+    },
+    {
+        "src" : "android-icon.png",
+        "sizes" : "36x36 48x48 72x72 96x96 144x144 192x192",
+        "type" : "image/png"
     }
  ]
 }
