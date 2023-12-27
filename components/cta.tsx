@@ -12,11 +12,11 @@ export default function Cta() {
                         <TitleMd>Book an Appointment</TitleMd>
                     </div>
                     <div className="flex flex-col md:flex-row">
-
+{/* 
                         <Link href="/book-appointment" className="btn btn-primary md:mr-4">
                             <FiCalendar className="icon inline-block" /> Book an Appointment
-                        </Link>
-                        <Link href="tel:+15073192140" className="btn btn-secondary mt-4 md:mt-0 md:mr-4">
+                        </Link> */}
+                        <Link href="tel:+15073192140" className="btn btn-primary mt-4 md:mt-0 md:mr-4">
                             <FiPhone className="icon inline-block" /> Call
                         </Link>
                     </div>

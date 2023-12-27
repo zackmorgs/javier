@@ -20,9 +20,9 @@ export default function HeroHomepage() {
                         <div className="max-w-xs mx-auto sm:max-w-none text-center" data-aos="zoom-y-out" data-aos-delay="300">
                             <p className="font-bold	text-lg uppercase"><FiMapPin className="icon inline-block" /> Rochester, MN</p>
                             <div className="flex flex-col md:flex md:flex-row lg:flex-row justify-center mt-8">
-                                <Link href="/book-appointment" className="btn btn-primary">
+                                {/* <Link href="/book-appointment" className="btn btn-primary">
                                     <FiCalendar className="icon inline-block" /> Book an Appointment
-                                </Link>
+                                </Link> */}
                                 <Link href="https://maps.app.goo.gl/7NZjuGxVRSdjGkTq5" target="_blank" className="btn btn-tertiary mt-3 md:mt-0 md:mx-4 ">
                                     <FiMapPin className="icon inline-block" /> Directions
                                 </Link>
