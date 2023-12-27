@@ -26,11 +26,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      {/* <Head>
-        <link rel="manifest" href="/manifest.json" />
+      <Head>
         <meta name="msapplication-TileColor" content="#ffffff" />
         <meta name="theme-color" content="#ffffff" />
-      </Head> */}
+      </Head>
       <body className={besley.className}>
         <Header />
         <main>
