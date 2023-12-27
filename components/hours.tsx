@@ -1,6 +1,6 @@
 import Link from "next/link"
-import { TitleLg }  from '@/components/ui/title'
-import { FiClock, FiCalendar } from "react-icons/fi";
+import { TitleLg } from '@/components/ui/title'
+import { FiClock, FiCalendar, FiPhone } from "react-icons/fi";
 
 export default function Hours() {
     const availability = [
@@ -68,8 +68,11 @@ export default function Hours() {
                     })}
                 </ul>
                 <div className="block md:flex justify-center mt-4">
-                    <Link href="/book-appointment" className="btn">
+                    {/* <Link href="/book-appointment" className="btn">
                         <FiCalendar className="inline-block icon" /> Book an Appointment
+                    </Link> */}
+                    <Link href="tel:+15073192140" className="btn btn-primary">
+                        <FiPhone className="icon inline-block" /> Call
                     </Link>
                 </div>
             </div>
