@@ -1,5 +1,6 @@
 {
  "name": "Javier's Barbershop",
+ "description" : "Javier's Barbershop offers haircuts, shaves, and hot towel services. Located in Rochester, MN.",
  "background_color": "#ffffff",
  "theme_color": "#ffffff",
  "start_url": "/",
