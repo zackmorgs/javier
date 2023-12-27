@@ -11,7 +11,6 @@ export default function Home() {
     <>
       <HeroHomepage />
       <Services />
-      <ReviewsHomepage />
       <div className="xl:max-w-7xl mx-auto py-3 mb-4">
         <div className="flex flex-col md:flex-row justify-center md:justify-between">
           <Hours />
@@ -19,6 +18,7 @@ export default function Home() {
         </div>
       </div>
       <Pricing/>
+      <ReviewsHomepage />
       <LeaveAReview/>
       <Cta/>
 
