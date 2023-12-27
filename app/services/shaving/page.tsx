@@ -7,14 +7,14 @@ import Cta from "@/components/cta"
 
 export default function Page() {
     const images = [
-        {
-            src: "/img/haircuts/men/8.jpg",
-            alt: "Men's Shave"
-        },
-        {
-            src: "/img/haircuts/men/2.jpg",
-            alt: "Men's Shave"
-        },
+        // {
+        //     src: "/img/haircuts/men/8.jpg",
+        //     alt: "Men's Shave"
+        // },
+        // {
+        //     src: "/img/haircuts/men/2.jpg",
+        //     alt: "Men's Shave"
+        // },
         {
             src: "/img/haircuts/men/3.jpg",
             alt: "Men's Shave"
