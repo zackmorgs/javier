@@ -1,5 +1,7 @@
 import { Besley } from 'next/font/google'
 import type { Metadata } from 'next'
+import Script from 'next/script'
+
 import './globals.scss'
 
 import Header from '@/components/ui/header'
@@ -29,6 +31,16 @@ export default function RootLayout({
           {children}
         </main>
         <Footer />
+        <Script src="https://www.googletagmanager.com/gtag/js?id=G-VVRCVF2QG4" />
+        <Script id="google-analytics">
+          {`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+ 
+          gtag('config', 'G-VVRCVF2QG4');
+        `}
+        </Script>
       </body>
     </html>
   )
