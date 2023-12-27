@@ -1,5 +1,6 @@
 import { Besley } from 'next/font/google'
-import Head from 'next/head'
+import type { Metadata } from 'next'
+
 import Script from 'next/script'
 
 import './globals.scss'
@@ -12,6 +13,14 @@ const besley = Besley({
   subsets: ['latin'],
   display: 'swap'
 })
+
+export const metadata: Metadata = {
+  metadataBase: new URL('https://javiers-barbershop.com'),
+  openGraph: {
+    
+    images: "/opengraph-image.jpg"
+  }
+}
 
 export default function RootLayout({
   children,
