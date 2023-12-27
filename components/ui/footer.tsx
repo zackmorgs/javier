@@ -26,9 +26,9 @@ export default function Footer() {
             <div className="mb-2">
               <Logo />
             </div>
-            <div className="text-sm text-gray-600">
+            {/* <div className="text-sm text-gray-600">
               <Link href="/about/terms" className="text-gray-600 hover:text-gray-900 hover:underline transition duration-150 ease-in-out">Terms</Link> · <Link href="/about/privacy-policy" className="text-gray-600 hover:text-gray-900 hover:underline transition duration-150 ease-in-out">Privacy Policy</Link>
-            </div>
+            </div> */}
           </div>
 
           {/* 2nd block */}
