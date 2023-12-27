@@ -1,3 +1,4 @@
+import type { Metadata } from 'next'
 import Hero from "@/components/ui/hero"
 import { FiPhone } from "react-icons/fi";
 import { TitleMd, TitleSm } from "@/components/ui/title";
@@ -5,6 +6,11 @@ import Hours from "@/components/hours";
 import MapComponent from "@/components/barbershop-map";
 import LeaveAReview from "@/components/leave-a-review";
 import Cta from "@/components/cta";
+
+export const metadata: Metadata = {
+    title: "Javier's Barbershop | Contact",
+    description: "Get in Contact with Javier's Barbershop",
+  }
 
 export default function Page() {
     return (

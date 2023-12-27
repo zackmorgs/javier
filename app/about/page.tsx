@@ -1,3 +1,5 @@
+import type { Metadata } from 'next'
+
 import Hero from "@/components/ui/hero"
 import Image from "next/image"
 
@@ -6,6 +8,12 @@ import AboutBarbershop from "./about-barbershop"
 
 import MapComponent from "@/components/barbershop-map"
 import Cta from "@/components/cta"
+
+export const metadata: Metadata = {
+    title: "Javier's Barbershop | About",
+    description: "Javier's Barbershop About Page",
+  }
+  
 
 export default function Page() {
     return (

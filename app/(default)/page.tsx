@@ -1,3 +1,5 @@
+import type { Metadata } from 'next'
+
 import HeroHomepage from '@/components/hero-homepage';
 import Services from '@/components/services-homepage';
 import Hours from '@/components/hours';
@@ -6,6 +8,12 @@ import ReviewsHomepage from '@/components/reviews-homepage';
 import Pricing from "@/components/pricing";
 import LeaveAReview from "@/components/leave-a-review";
 import Cta from '@/components/cta';
+
+export const metadata: Metadata = {
+  title: "Javier's Barbershop | Home",
+  description: "Javier's Barbershop Homepage",
+}
+
 export default function Home() {
   return (
     <>

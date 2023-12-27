@@ -1,4 +1,11 @@
+import type { Metadata } from 'next'
+
 import Hero from "@/components/ui/hero"
+
+export const metadata: Metadata = {
+    title: "Javier's Barbershop | Hot Towel",
+    description: "Javier's Barbershop hot towel information.",
+}
 
 export default function Page() {
     return (

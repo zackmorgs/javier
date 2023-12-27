@@ -1,9 +1,15 @@
+import type { Metadata } from 'next'
 import Image from 'next/image';
 import Hero from "@/components/ui/hero"
 import Gallery from '@/components/ui/gallery';
 import { TitleMd } from '@/components/ui/title';
 import Cta from "@/components/cta"
 import Pricing from "@/components/pricing";
+
+export const metadata: Metadata = {
+    title: "Javier's Barbershop | Women's Haircuts",
+    description: "Javier's Barbershop women's haircuts information.",
+}
 
 export default function Page() {
     const images = [
