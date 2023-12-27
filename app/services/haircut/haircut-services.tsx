@@ -72,7 +72,7 @@ export default function HaircutServices() {
                         </p>
                     </div>
                     <div className="px-4 sm:px-6 md:w-1/2">
-                        <Image src="/img/haircuts/men/4.jpg" width={625} height={625} alt="Haircut" className="w-full" />
+                        <Image src="/img/services/haircut.jpg" width={625} height={625} alt="Haircut" className="w-full" />
                     </div>
                 </div>
 
