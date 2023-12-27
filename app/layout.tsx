@@ -16,6 +16,12 @@ const besley = Besley({
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://javiers-barbershop.com'),
+  alternates: {
+    canonical: '/',
+    languages: {
+      'en-US': '/en-US'
+    },
+  },
   openGraph: {
     images: "/og-image.jpg"
   }
