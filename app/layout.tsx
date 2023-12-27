@@ -23,7 +23,9 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    images: "/og-image.jpg"
+    images: "/og-image.jpg",
+    url: "https://javiers-barbershop.com/",
+    type: "website"
   }
 }
 
