@@ -16,7 +16,7 @@ export const services = [
     },
     {
         name: "Hot Towel",
-        picture: "/img/haircuts/men/4.jpg",
+        picture: "/img/services/hot-towel.jpg",
         link: "/services/hot-towel",
     }
 ]
