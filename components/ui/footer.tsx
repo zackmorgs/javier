@@ -37,7 +37,7 @@ export default function Footer() {
             <ul className="text-sm">
               {services.map((service, index) => (
                 <li key={index} className="mb-2">
-                  <Link href={service.href} className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out">
+                  <Link href={service.href} className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out" aria-label={service.name}>
                     {service.name}
                   </Link>
                 </li>
