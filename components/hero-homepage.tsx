@@ -23,12 +23,13 @@ export default function HeroHomepage() {
                                 {/* <Link href="/book-appointment" className="btn btn-primary">
                                     <FiCalendar className="icon inline-block" /> Book an Appointment
                                 </Link> */}
-                                <Link href="https://maps.app.goo.gl/7NZjuGxVRSdjGkTq5" target="_blank" className="btn btn-tertiary mt-3 md:mt-0 md:mx-4 ">
-                                    <FiMapPin className="icon inline-block" /> Directions
-                                </Link>
-                                <Link href="tel:+15073192140" className="btn btn-secondary mt-4 md:mt-0">
+                                <Link href="tel:+15073192140" className="btn btn-primary mt-4 md:mt-0">
                                     <FiPhone className="icon inline-block" /> Call
                                 </Link>
+                                <Link href="https://maps.app.goo.gl/7NZjuGxVRSdjGkTq5" target="_blank" className="btn btn-secondary mt-3 md:mt-0 md:mx-4 ">
+                                    <FiMapPin className="icon inline-block" /> Directions
+                                </Link>
+
                             </div>
 
                         </div>

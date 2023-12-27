@@ -77,7 +77,7 @@ export default function MobileMenu() {
           leaveFrom="opacity-100"
           leaveTo="opacity-0"
         >
-          <ul className="px-5 py-2">
+          <ul className="px-5 py-2 ">
             {menuItems.map((item, index) => {
               return (
                 <li key={index}>
@@ -87,12 +87,12 @@ export default function MobileMenu() {
                 </li>
               )
             })}
-            <li className="border-t pt-3">
+            {/* <li className="border-t pt-3">
               <Link href="/book-appointment" className="block w-full py-2 text-center bg-black text-gray-50 hover:bg-black-900 rounded-md" onClick={() => setMobileNavOpen(false)}>
                 <FiCalendar className="icon inline-block" /> Book an Appointment
               </Link>
-            </li>
-            <li className="pt-3">
+            </li> */}
+            <li className="border-t pt-3">
               <Link href="tel:+15073192140" className="block w-full py-2 text-center cta-call text-gray-50 hover:bg-black-900 rounded-md" onClick={() => setMobileNavOpen(false)}>
                 <FiPhone className="icon inline-block" /> Call
               </Link>
