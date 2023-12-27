@@ -33,7 +33,7 @@ export default function Services() {
                                         <div className="mb-4">
                                             <TitleMd>{service.name}</TitleMd>
                                         </div>
-                                        <Link href={service.link} className="btn">
+                                        <Link href={service.link} className="btn" aria-label={`${service.name} Service`}>
                                             Learn More <FiArrowRight className="icon inline-block" />
                                         </Link>
                                     </div>
@@ -44,7 +44,7 @@ export default function Services() {
                 </ul>
                 {services.length > 4 && (
                     <div className="text-center mt-4">
-                        <button onClick={toggleDisplay} className="btn">
+                        <button onClick={toggleDisplay} className="btn" aria-label="See More/Less">
                             {showAll ? 'See Less' : 'See More'}
                         </button>
                     </div>

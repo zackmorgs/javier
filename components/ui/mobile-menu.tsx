@@ -81,7 +81,7 @@ export default function MobileMenu() {
             {menuItems.map((item, index) => {
               return (
                 <li key={index}>
-                  <Link href={item.href} className="flex w-full text-gray-600 hover:text-gray-900 py-2 justify-center" onClick={() => setMobileNavOpen(false)}>
+                  <Link href={item.href} className="flex w-full text-gray-600 hover:text-gray-900 py-2 justify-center" onClick={() => setMobileNavOpen(false)} aria-label={item.name}>
                     {item.name}
                   </Link>
                 </li>
@@ -93,7 +93,7 @@ export default function MobileMenu() {
               </Link>
             </li> */}
             <li className="border-t pt-3">
-              <Link href="tel:+15073192140" className="block w-full py-2 text-center cta-call text-gray-50 hover:bg-black-900 rounded-md" onClick={() => setMobileNavOpen(false)}>
+              <Link href="tel:+15073192140" className="block w-full py-2 text-center cta-call text-gray-50 hover:bg-black-900 rounded-md" onClick={() => setMobileNavOpen(false)} aria-lable="Call Javier's Barbershop">
                 <FiPhone className="icon inline-block" /> Call
               </Link>
             </li>

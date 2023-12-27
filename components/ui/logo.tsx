@@ -9,7 +9,7 @@ const rye = Rye({
 
 export default function Logo() {
   return (
-    <Link href="/" aria-label="Cruip" className={`${rye.className} logo block`}>
+    <Link href="/" aria-label="Javier's Barbershop Logo" className={`${rye.className} logo block`}>
       <div className="flex flex-row">
         {/* */}
         <Image id="logo-img" src="/svg/barbershop-thing-colored.svg" width={18} height={18} alt="Javier's Barbershop Logo Element" className="mr-3" /> 

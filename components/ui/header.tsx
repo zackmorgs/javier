@@ -47,23 +47,23 @@ export default function Header() {
             <ul className="flex grow justify-end flex-wrap items-center">
               {menuItems.map((item, index) => (
                 <li key={index}>
-                  <Link href={item.href} className="menu-item font-medium px-2 py-3 mx-3 flex items-center transition duration-150 ease-in-out">{item.name}</Link>
+                  <Link href={item.href} className="menu-item font-medium px-2 py-3 mx-3 flex items-center transition duration-150 ease-in-out" aria-lable={item.name}>{item.name}</Link>
                   {/* {typeof item.icon !== 'undefined' ? item.icon | ""} */}
                 </li>
               ))}
               <Dropdown title="Services">
                 {/* 2nd level: hover */}
                 <li>
-                  <Link href="/services/haircut" className="font-medium text-sm flex py-2 px-2 leading-tight">Haircuts</Link>
+                  <Link href="/services/haircut" className="font-medium text-sm flex py-2 px-2 leading-tight" aria-lable="Haircuts">Haircuts</Link>
                 </li>
                 <li>
-                  <Link href="/services/shaving" className="font-medium text-sm flex py-2 px-2 leading-tight">Shaving</Link>
+                  <Link href="/services/shaving" className="font-medium text-sm flex py-2 px-2 leading-tight" aria-lable="Shaving">Shaving</Link>
                 </li>
                 <li>
-                  <Link href="/services/hot-towel" className="font-medium text-sm flex py-2 px-2 leading-tight">Hot Towel</Link>
+                  <Link href="/services/hot-towel" className="font-medium text-sm flex py-2 px-2 leading-tight" aria-lable="Hot Towel">Hot Towel</Link>
                 </li>
                 <li>
-                  <Link href="/services/straight-razor" className="font-medium text-sm flex py-2 px-2 leading-tight">Straight Razor</Link>
+                  <Link href="/services/straight-razor" className="font-medium text-sm flex py-2 px-2 leading-tight"  aria-lable="Straight Razor">Straight Razor</Link>
                 </li>
               </Dropdown>
 

@@ -21,7 +21,8 @@ const MapComponent = () => {
           allowFullScreen={false}
           loading="lazy"
           referrerPolicy="no-referrer-when-downgrade"
-          className="p-2 border bg-white">
+          className="p-2 border bg-white"
+          title="Javier's Barbershop Google Map">
         </iframe>
         {/* <address className="text-center mt-4">
           1112 9th St. NE, Rochester, MN, United States
