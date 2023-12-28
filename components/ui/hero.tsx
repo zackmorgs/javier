@@ -1,3 +1,5 @@
+"use client";
+
 import React, { ReactNode, HTMLAttributes } from 'react';
 import { TitleXL }  from '@/components/ui/title'
 
@@ -8,6 +10,7 @@ interface HeroProps {
     // Include any other props you expect
     [key: string]: any; // This line is for any additional props
 }
+
 
 export default function Hero({ title, children, className, ...rest }: HeroProps) {
     return (

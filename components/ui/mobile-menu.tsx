@@ -1,9 +1,19 @@
 'use client'
 
+
 import { useState, useRef, useEffect } from 'react'
 import { Transition } from '@headlessui/react'
+
+import ReactGA from 'react-ga4';
+
 import Link from 'next/link'
 import { FiCalendar, FiPhone } from "react-icons/fi";
+
+const GA_Stuff = {
+  gtmId: 'G-VVRCVF2QG4'
+}
+
+ReactGA.initialize(GA_Stuff.gtmId);
 
 export default function MobileMenu() {
   const [mobileNavOpen, setMobileNavOpen] = useState<boolean>(false)
@@ -39,6 +49,15 @@ export default function MobileMenu() {
     document.addEventListener('keydown', keyHandler)
     return () => document.removeEventListener('keydown', keyHandler)
   })
+
+  const handleCallClick = function (e: any) {
+    // Send a custom event
+    ReactGA.event({
+      category: "conversion",
+      action: "call",
+      label: "navigation"
+    });
+  }
 
   return (
     <div id="nav-mobile" className="flex md:hidden">
@@ -93,7 +112,7 @@ export default function MobileMenu() {
               </Link>
             </li> */}
             <li className="border-t pt-3">
-              <Link href="tel:+15073192140" className="block w-full py-2 text-center cta-call text-gray-50 hover:bg-black-900 rounded-md" onClick={() => setMobileNavOpen(false)} aria-label="Call Javier's Barbershop">
+              <Link href="tel:+15073192140" className="block w-full py-2 text-center cta-call text-gray-50 hover:bg-black-900 rounded-md" onClick={handleCallClick} aria-label="Call Javier's Barbershop">
                 <FiPhone className="icon inline-block" /> Call
               </Link>
             </li>
