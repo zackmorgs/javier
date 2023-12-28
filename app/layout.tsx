@@ -1,3 +1,5 @@
+import ReactGA from "react-ga4";
+
 import { Besley } from 'next/font/google'
 import type { Metadata } from 'next'
 
@@ -14,6 +16,8 @@ const besley = Besley({
   display: 'swap'
 })
 
+
+
 export const metadata: Metadata = {
   metadataBase: new URL('https://javiers-barbershop.com'),
   alternates: {
@@ -29,6 +33,12 @@ export const metadata: Metadata = {
   }
 }
 
+const GA_Stuff = {
+    gtmId: 'GTM-P29KRMG8'
+}
+
+ReactGA.initialize(GA_Stuff.gtmId);
+
 export default function RootLayout({
   children,
 }: {
@@ -42,7 +52,7 @@ export default function RootLayout({
           {children}
         </main>
         <Footer />
-        <Script src="https://www.googletagmanager.com/gtag/js?id=G-VVRCVF2QG4" />
+        {/* <Script src="https://www.googletagmanager.com/gtag/js?id=G-VVRCVF2QG4" />
         <Script id="google-analytics">
           {`
           window.dataLayer = window.dataLayer || [];
@@ -51,7 +61,7 @@ export default function RootLayout({
  
           gtag('config', 'G-VVRCVF2QG4');
         `}
-        </Script>
+        </Script> */}
       </body>
     </html>
   )
