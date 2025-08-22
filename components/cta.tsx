@@ -34,8 +34,8 @@ export default function Cta() {
                         <Link href="/book-appointment" className="btn btn-primary md:mr-4">
                             <FiCalendar className="icon inline-block" /> Book an Appointment
                         </Link> */}
-                        <Link href="tel:+15073192140" className="btn btn-primary mt-4 md:mt-0 md:mr-4" onClick={handleCallClick}>
-                            <FiPhone className="icon inline-block" /> Call
+                        <Link href="https://www.vagaro.com/javiersbarbershop" className="btn btn-primary mt-4 md:mt-0 md:mr-4" onClick={handleCallClick}>
+                            <FiCalendar className="icon inline-block" /> Make an Appointment
                         </Link>
                     </div>
                 </div>
