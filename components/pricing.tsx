@@ -23,7 +23,7 @@ export default function Pricing() {
         },
         {
             name: "Haircut, Beard Treatment, Hot Towel Shave",
-            price: "$70"
+            price: "$75"
         },
     ]
     return (
